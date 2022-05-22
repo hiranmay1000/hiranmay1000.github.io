@@ -13,6 +13,10 @@ function startGame() {
     renderGame();
 }
 
+function getRandomCard() {
+    console.log(drawncard);
+}
+
 function renderGame() {
 
     cardEl.textContent = "Cards: ";
