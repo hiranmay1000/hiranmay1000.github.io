@@ -17,6 +17,8 @@ function getRandomCard() {
     console.log(drawncard);
 }
 
+// This new thing I have added please review it 
+
 function renderGame() {
 
     cardEl.textContent = "Cards: ";
