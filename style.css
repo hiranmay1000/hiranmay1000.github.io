@@ -1,0 +1,137 @@
+* {
+    text-decoration: none;
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+}
+
+.navbar {
+    width: 100%;
+}
+
+/*H MAX*/
+
+.navbar h1 {
+    font-family: lato;
+    font-size: 32;
+    font-weight: lighter;
+    color: #3d37f1;
+    float: left;
+    position: absolute;
+    margin: -340px 0 0 220px;
+}
+
+/*Navbar - Top menu*/
+.main-menu ul {
+    position: absolute;
+    margin: -335px 0 0 850px;
+}
+.main-menu ul li {
+    font-family: lato;
+    float: left;
+    display: inline;
+    box-shadow: inset 0 0 0 0 #ece3e3;
+    transition: ease-in pink;
+}
+.main-menu ul li a {
+    color: bisque;
+    padding: 10px;
+}
+.main-menu ul li a:hover {
+    color: #111;
+    border-radius: 19px;
+    box-shadow: inset 120px 0 0 0 rgb(183, 111, 255);
+}
+
+/*Wrapper*/
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+    height: auto;
+}
+
+/*Hello world*/
+
+.wrapper h3 {
+    font-family: lato;
+    font-size: 38px;
+    font-weight: bold;
+    position: absolute;
+    margin: -380px 0 0 80px;
+}
+
+/*wecome info*/
+#welcome-info {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: lato;
+    font-weight: lighter;
+    float: left;
+    position: absolute;
+    margin: -300px 0 0 80px;
+    line-height: 16px;
+    color: #111;
+}
+
+/*Top corner*/
+
+#top {
+    /* width: 100%  ; */
+}
+
+/*Main logo (Middle)*/
+
+#logo {
+    position: absolute;
+    margin-top: 280px;
+    float: left;
+    margin-left: 620px;
+    z-index: 1;
+}
+
+/*Button*/
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 300px;
+}
+
+#btn {
+    position: absolute;
+    margin-left: 1170px;
+    margin-top: -346px;
+    width: 110px;
+    height: 40px;
+    border: none;
+    background-color: #ff8923;
+    border-radius: 19px;
+    box-shadow: inset 0 0 0 0 #ece3e3;
+    color: #ffffff;
+    transition: ease-in 0.2s;
+}
+
+#btn:hover {
+    cursor: pointer;
+    box-shadow: inset 120px 0 0 0 #111;
+}
+
+#wave-me {
+    margin: -210px 0 0 340px;
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    border: none;
+    background-color: #ff8923;
+    border-radius: 19px;
+    box-shadow: inset 0 0 0 0 #ece3e3;
+    color: #ffffff;
+    transition: ease-in 0.2s;
+}
+
+#wave-me:hover {
+    cursor: pointer;
+    box-shadow: inset 120px 0 0 0 #3d37f1;
+}
