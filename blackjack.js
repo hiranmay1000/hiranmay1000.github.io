@@ -9,7 +9,6 @@ let cardEl = document.getElementById("cards-el");
 let newGame = document.getElementById("start-game-btn");
 let getName = document.getElementById("new-player");
 
-
 function startGame() {
     isAlive = true;
     let firstcard = getRandomCard();
