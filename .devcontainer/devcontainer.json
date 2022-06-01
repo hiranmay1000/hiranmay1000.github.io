@@ -16,7 +16,8 @@
 	"extensions": [
 		"ms-azuretools.vscode-azurefunctions",
 		"dbaeumer.vscode-eslint",
-		"yandeu.five-server"
+		"yandeu.five-server",
+		"GitHub.github-vscode-theme"
 	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.

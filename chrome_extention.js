@@ -1,7 +1,7 @@
 let save = document.getElementById("save-el");
 let inputEl = document.getElementById("show-el");
 
-inputEl.textContent =   ;
+// inputEl.textContent =   ;
 
 
 
