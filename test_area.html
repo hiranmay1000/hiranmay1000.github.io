@@ -7,6 +7,17 @@
         <title>Test-Page</title>
     </head>
     <body>
-        <script src="test_area.js"></script>
+        <section class="main-page">
+            <h2>I'M A <span class="input"></span></h2>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".input", {
+                strings: ["Engineering", "DEVELOPER", "DESIGNER", "FREELANCER"],
+                typeSpeed: 150,
+                backSpeed: 110,
+                loop: true,
+            });
+        </script>
     </body>
 </html>

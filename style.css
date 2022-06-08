@@ -18,13 +18,15 @@ header {
 
 header #logo {
     text-transform: uppercase;
-    font-family: "Quicksand", sans-serif;
-    font-size: 35px;
+    font-family: sans-serif;
+    font-size: 38px;
     padding-top: 30px;
-    color: #e63946;
-    font-weight: bold;
     text-align: center;
     display: block;
+}
+
+#logo a {
+    color: #e63946;
 }
 
 /* menus */
@@ -43,9 +45,8 @@ header nav ul li {
 
 header nav ul li a {
     padding: 0 6px;
-    font-family: "Quicksand";
-    font-size: 14px;
-    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
     color: #111;
 }
 
@@ -98,59 +99,12 @@ main .index-banner {
 
 .title-3 {
     font-family: sans-serif;
-    color: #e63946;
+    color: #07031e;
     letter-spacing: 7px;
     padding-bottom: 40px;
     width: 280px;
     text-align: center;
     margin: 0 auto;
-}
-
-#world {
-    color: #fff;
-}
-
-.typed-out {
-    overflow: hidden;
-    border-right: 0.15em solid orange;
-    font-size: 1.6rem;
-    width: 0;
-}
-
-@keyframes typing {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes cursor {
-    from {
-        border-color: transparent;
-    }
-    to {
-        border-color: orange;
-    }
-}
-
-@keyframes title-large {
-    from {
-        padding-right: 1%;
-    }
-    to {
-        padding-right: -1%;
-    }
-}
-
-.typed-out {
-    overflow: hidden;
-    border-right: 0.15em solid orange;
-    white-space: nowrap;
-    font-size: 1.6rem;
-    width: 0;
-    animation: typing 1.5s 1.5s steps(20, end) forwards, cursor 1s .3s infinite;
 }
 
 /* 2nd-page-only-mobile-version */
@@ -159,13 +113,21 @@ main .index-banner {
     margin: 18px;
 }
 
+.all-elements h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    margin: 18px auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
 .all-elements h3 {
     background-color: #03071e;
     height: 100px;
     margin: 10px 0;
     text-align: center;
     line-height: 100px;
-    font-family: "Quicksand";
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
 }
 
@@ -174,11 +136,9 @@ main .index-banner {
 }
 
 /* previews mobile version only */
-.previews {
-    margin-bottom: 70px;
-}
 
 .previews h3 {
+    /* creation */
     font-family: sans-serif;
     font-size: large;
     text-align: center;
@@ -192,19 +152,27 @@ main .index-banner {
     width: 300px;
     margin: 0 auto;
 }
-.bg-preview-img {
-    background-image: url(anipng.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
-    width: 100%;
+
+/* project-page */
+
+.section-3 {
+    height: 500px;
+    width: 1000px;
+    background-color: beige;
+    margin: 0 auto;
+    margin-top: 800px;
+}
+
+/* .hyperlink-logo */
+.hyperlink-logo {
+    max-width: 20px;
+    height: 100px;
 }
 
 /* FOOTER */
 
 footer {
-    background-color: #03071e;
+    background-color: #a8dadc;
     overflow: hidden;
 }
 
@@ -216,13 +184,13 @@ footer ul {
 
 footer ul li {
     list-style: none;
-    font-family: "Quicksand";
+    font-family: "Poppins", sans-serif;
     font-weight: lighter;
 }
 
 footer ul li a {
     line-height: 40px;
-    color: #fff;
+    color: #111;
 }
 
 /* social-media */
@@ -249,7 +217,6 @@ footer ul li a {
     #blog,
     #home {
         display: block;
-        padding-top: 2px; /*why that 2px diff*/
     }
 
     header nav ul {
@@ -267,7 +234,8 @@ footer ul li a {
         color: #111;
     }
     header nav ul li a:hover {
-        color: #e63946;
+        color: orange;
+        transition: 0.3s;
     }
 
     /* MAIN */
@@ -278,8 +246,14 @@ footer ul li a {
 
     .title h2 {
         font-family: sans-serif;
-        width: 770px;
+        width: 800px;
         margin: 0 auto;
+    }
+    .I-am {
+        max-width: 800px;
+    }
+    .software {
+        float: left;
     }
     .title-2 p {
         font-family: sans-serif;
@@ -287,22 +261,35 @@ footer ul li a {
         margin: 0 auto;
     }
 
+    .border-title {
+        width: 800px;
+        height: 140px;
+        margin: 0 auto;
+        border: 3px solid #a8dadc;
+        backdrop-filter: blur(5px);
+    }
+
     .index-banner h2 {
-        font-size: 60px;
+        font-size: 56px;
         line-height: 70px;
         text-shadow: 1px 1px 6px #e0c1db;
-        border: 3px solid #e0c1db;
-        backdrop-filter: blur(5px);
     }
     .index-banner h3 {
         backdrop-filter: blur(1px);
         border-radius: 30px;
     }
+
+    .title h2 span {
+        color: #a8dadc;
+        text-shadow: 1px 1px 9px #111;
+    }
+
     /* all elements */
     .all-elements,
     .previews {
         width: 1000px;
-        margin: 8px auto;
+        margin: 16px auto;
+        margin-bottom: 600px;
     }
 
     .all-elements a div {
@@ -313,6 +300,7 @@ footer ul li a {
     }
     .all-elements a div:hover {
         color: #e63946;
+        transition: 0.3s;
     }
     .all-elements .element-sq {
         width: calc(25% - 29px);
@@ -329,11 +317,53 @@ footer ul li a {
     }
     .all-elements a:hover {
         color: #a8dadc;
+        transition: 0.3s;
+    }
+
+    /* hello-world */
+    .hello-world {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 700px;
+    }
+
+    /* my-info */
+
+    main .index-banner-2 {
+        width: 100%;
+        height: 100vh;
+        background-image: url(google.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: table;
+    }
+    .my-info-blury-container {
+        text-align: center;
+        border: 2px solid #a8dadc;
+        height: 210px;
+        max-width: 1200px;
+        margin: 0 auto;
+        backdrop-filter: blur(5px);
+    }
+
+    .vertical-center {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    /* title-software */
+    .title-software {
+        height: 200px;
+        font-family: sans-serif;
+        color: #03071e;
+        font-size: 58px;
     }
 
     /* previews section */
+    .previews {
+        margin: 0 auto;
+    }
     .previews h3 {
-        margin-top: 700px;
         padding-bottom: 30px;
         font-family: sans-serif;
         font-size: 52px;
@@ -347,16 +377,6 @@ footer ul li a {
         width: 100%;
     }
 
-    .bg-preview-img {
-        background-image: url(anipng.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 900px;
-        width: 1000px;
-        object-fit: contain;
-        margin: 0 auto;
-    }
-
     /* FOOTER */
 
     footer {
@@ -367,6 +387,7 @@ footer ul li a {
     }
 
     footer a:hover {
-        color: #111;
+        color: orange;
+        transition: 0.3s;
     }
 }
