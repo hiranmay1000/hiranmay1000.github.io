@@ -4,13 +4,17 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Hiranmay1000</title>
+        <title>Seekerbay</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="html" href="index2.html" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <!--
@@ -24,24 +28,33 @@
 
         <header>
             <div id="logo">
-                <a href="index.html">
-                    <span>H</span>
-                    <span style="color: #03071e">MAX</span>
+                <a href="index.html"
+                    >SEEKER<span style="color: #03071e">BAY</span>
                 </a>
             </div>
             <nav class="main-menu">
-                <ul>
-                    <li><a href="index.html" id="home">HOME</a></li>
-                    <li>
-                        <a
-                            href="https://www.canva.com/design/DAFCJDeZwhA/bcYs2WTvM1RWttOih84hUg/edit?utm_content=DAFCJDeZwhA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                            >RESUME</a
-                        >
-                    </li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="" id="blog">BLOG</a></li>
-                    <li><a href="">CONTACTS</a></li>
-                </ul>
+                <div id="myLinks">
+                    <ul>
+                        <li><a href="index.html" id="home">HOME</a></li>
+                        <li>
+                            <a
+                                href="https://www.canva.com/design/DAFCJDeZwhA/bcYs2WTvM1RWttOih84hUg/edit?utm_content=DAFCJDeZwhA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                >RESUME</a
+                            >
+                        </li>
+                        <li><a id="blog" href="">BLOG</a></li>
+                        <li><a id="projects" href="projects.html">PROJECTS</a></li>
+                        <li><a id="contacts" href="">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+
+                <form action="">
+                    <div class="login-container">
+                        <button id="login-btn" type="button">LOG IN</button>
+                    </div>
+                </form>
             </nav>
         </header>
         <main>
@@ -49,13 +62,37 @@
                 <div class="vertical-center">
                     <div class="title-3">
                         <div class="typed-out">
-                            <div class="welcome"><h4><span id="world" style="color: orange;"></span></h4></div>
+                            <div class="welcome">
+                                <h4>
+                                    <span
+                                        id="world"
+                                        style="color: orange"
+                                    ></span>
+                                </h4>
+                            </div>
                         </div>
                     </div>
                     <div class="border-title">
                         <div class="title-inside-box">
                             <div class="title">
-                                <h2> <div class="I-am">I'm a <br> software Engineer </h2>
+                                <h2>I'm a<br />software Engineer</h2>
+                            </div>
+                        </div>
+                        <div class="search-box">
+                            <input
+                                type="search"
+                                name="Search"
+                                class="search-input"
+                                placeholder="Search here"
+                            />
+                            <div class="container-btn">
+                                <button
+                                    id="search-btn"
+                                    type="submit"
+                                    name="Search"
+                                >
+                                    SEARCH
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -105,14 +142,37 @@
                 <div class="vertical-center">
                     <div class="my-info-blury-container">
                         <div class="title-software">
-                           <h2>I'M A <br> SOFTWARE <span class="input" style="color: #a8dadc;"></span></h2>
+                            <h2>
+                                I'M A <br />
+                                SOFTWARE
+                                <span
+                                    class="input"
+                                    style="color: orange"
+                                ></span>
+                            </h2>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="previews">
                 <h3>Creations</h3>
-                <p>To see my latest projects and updates please visit <a id="projects-html-page" href="projects.html" target="_blank" style="color: #a8dadc; ">project <img id="hyperlink-logo" src="hyperlink.png" alt="hyperlink logo" style="height: 16px;"> </a>  section and also check out my latest <a href="blogs" style="color: #a8dadc;">blogs</a> .</p>
+                <p>
+                    To see my latest projects and updates please visit
+                    <a
+                        id="projects-html-page"
+                        href="projects.html"
+                        target="_blank"
+                        >project
+                        <img
+                            id="hyperlink-logo"
+                            src="hyperlink.png"
+                            alt="hyperlink logo"
+                            style="height: 16px"
+                        />
+                    </a>
+                    section and also check out my latest
+                    <a href="blogs">blogs</a> .
+                </p>
             </section>
         </main>
         <footer>
@@ -159,23 +219,24 @@
                 </ul>
             </div>
         </footer>
-        
+
+        <script src="index.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
-                var typed2 = new Typed("#world", {
-                    strings: ["HELLO WORLD!"],
-                    typeSpeed: 200,
-                    loop : true,
-                    backSpeed: 110,
-                })
-                var typed2 = new Typed(".input", {
-                    strings: ["ENGINEER","DEVELOPER", "DESIGNER", "FREELANCER"],
-                    typeSpeed: 150,
-                    backSpeed: 110,
-                    loop : true,
-                })
+            var typed2 = new Typed("#world", {
+                strings: ["HELLO WORLD!"],
+                typeSpeed: 200,
+                loop: true,
+                backSpeed: 110,
+            });
+            var typed2 = new Typed(".input", {
+                strings: ["ENGINEER", "DEVELOPER", "DESIGNER", "FREELANCER"],
+                typeSpeed: 150,
+                backSpeed: 110,
+                loop: true,
+            });
         </script>
-
 
         <!-- <script src="mainjava.js"></script> -->
     </body>

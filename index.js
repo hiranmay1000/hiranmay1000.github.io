@@ -16,3 +16,11 @@ function save() {
     console.log(count = 0)
     countEl.innerText = 0
 }
+
+function myFunction(){
+    var x = document.getElementsByClassName("main-menu");
+    if(x.style.display === "block"){
+        x.style.display = "none";
+    }else
+        x.style.display = "block";
+}
