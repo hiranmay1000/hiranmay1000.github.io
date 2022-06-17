@@ -12,6 +12,14 @@
 
 # version -> 1.5010 >> 15/6/2022
 
+# version -> 1.6010
+
 # FUTURE UPDATES
 
-# version -> 1.6010
+# version -> 1.7010
+
+# version -> 1.8010
+
+# version -> 1.9010
+
+# version -> 2.0010
