@@ -12,22 +12,21 @@ html {
 }
 
 .social-media-container{
-    width: 35px;
-    height: 152px;
-    background-color: #b7b7b7;
+    width: 38px;
+    height: fit-content;
     position: fixed;
     bottom: 35%;
+    background-color: #a8dadc;
+}
+
+.social-media-container img{
+    width: 38px;
+    height: fit-content;
 }
 
 .social-media-container ul li a:hover{
     display: block;
-}
-
-.social-media-container img{
-    width: 35px;
-}
-.social-media-container img:hover{
-    background-image: linear-gradient(#e63946, rgb(255, 145, 145));
+    background-color: #fff;
 }
 
 .up-down-btn {
@@ -237,8 +236,16 @@ main .index-banner {
 
 /* CREATION SECTION  */
 .previews {
-    height: 300px;
+    margin: 0 auto;
+    height: 100vh;
+    display: table;
 }
+
+.previews .vertical-centre{
+    display: table-cell;
+    vertical-align: middle;
+}
+
 
 .previews h3 {
     /* creation */
@@ -394,14 +401,24 @@ footer ul li a {
     }
 
     .social-media-container img{
-        width: 40px;
+        width: 50px;
     }
     .social-media-container{
-        width: 40px;
-        height: 172px;  
+        width: 50px;
+        height: fit-content;  
+    }
+    .social-media-container ul li a:hover{
+        width: 60px;
+        text-align: center;
+        background-color: #a8dadc;
+        display: block;
     }
     
-
+    .social-media-container ul li:hover{
+        text-align: center;
+        display: block;
+    }
+    
     #myLinks ul {
         display: block;
     }
