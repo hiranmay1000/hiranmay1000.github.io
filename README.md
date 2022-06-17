@@ -16,10 +16,10 @@
 
 # version -> 1.7010 >> 17/6/2022
 
-# version -> 1.8010
+# version -> 1.8010 >> 17/6/2022
 
+# version -> 1.9010 >> 17/6/2022
 
-# version -> 1.9010
-# FUTURE UPDATES
 
 # version -> 2.0010
+# FUTURE UPDATES
