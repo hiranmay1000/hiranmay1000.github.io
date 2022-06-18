@@ -8,10 +8,30 @@
 
 body,
 html {
-    background-color: #f2f3f4;
+    background-color: #ebebeb;
+    scroll-behavior: smooth;
 }
 
-.social-media-container{
+header,
+footer {
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+}
+
+.social-media-container {
     width: 38px;
     height: fit-content;
     position: fixed;
@@ -19,12 +39,12 @@ html {
     background-color: #a8dadc;
 }
 
-.social-media-container img{
+.social-media-container img {
     width: 38px;
     height: fit-content;
 }
 
-.social-media-container ul li a:hover{
+.social-media-container ul li a:hover {
     display: block;
     background-color: #fff;
 }
@@ -39,20 +59,20 @@ html {
     position: fixed;
 }
 
-#up-btn a{
+#up-btn a {
     text-align: center;
     line-height: 50px;
-    color:#fff;
+    color: #fff;
     font-size: larger;
     height: 50px;
     display: block;
     background-color: #111;
 }
 
-#down-btn a{
+#down-btn a {
     text-align: center;
     line-height: 50px;
-    color:#fff;
+    color: #fff;
     font-size: larger;
     height: 50px;
     display: block;
@@ -150,10 +170,6 @@ header nav ul li a {
     display: none;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 /* MAIN */
 
 main .index-banner {
@@ -207,7 +223,8 @@ main .index-banner {
 /* 2nd-page-only-mobile-version */
 
 .all-elements {
-    margin: 18px;
+    margin: 18px auto;
+    width: 100%;
 }
 
 .all-elements h1 {
@@ -229,6 +246,7 @@ main .index-banner {
 }
 
 .all-elements a {
+    width: fit-content;
     color: #a8dadc;
 }
 
@@ -241,11 +259,10 @@ main .index-banner {
     display: table;
 }
 
-.previews .vertical-centre{
+.previews .vertical-centre {
     display: table-cell;
     vertical-align: middle;
 }
-
 
 .previews h3 {
     /* creation */
@@ -400,25 +417,29 @@ footer ul li a {
         border-right: 3px solid #111;
     }
 
-    .social-media-container img{
-        width: 50px;
+    .up-down-btn {
+        margin-right: 17px;
     }
-    .social-media-container{
-        width: 50px;
-        height: fit-content;  
+
+    .social-media-container img {
+        width: 40px;
     }
-    .social-media-container ul li a:hover{
-        width: 60px;
+    .social-media-container {
+        width: 40px;
+        height: fit-content;
+    }
+    .social-media-container ul li a:hover {
+        width: 50px;
         text-align: center;
         background-color: #a8dadc;
-        display: block;
+        /* display: block; */
     }
-    
-    .social-media-container ul li:hover{
+
+    .social-media-container ul li:hover {
         text-align: center;
         display: block;
     }
-    
+
     #myLinks ul {
         display: block;
     }
