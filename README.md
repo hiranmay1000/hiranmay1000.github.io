@@ -1,25 +1,4 @@
-# personal-HTML-website
-
-# This website is a personal project making place where I put all kind of ideas and work on it in a diverse way.
-
-# UPDATED VERSIONS (Current)
-
-# version -> 1.2010 >> 7/6/2022
-
-# version -> 1.3010 >> 7/6/2022
-
-# version -> 1.4010 >> 8/6/2022
-
-# version -> 1.5010 >> 15/6/2022
-
-# version -> 1.6010 >> 17/6/2022
-
-# version -> 1.7010 >> 17/6/2022
-
-# version -> 1.8010 >> 17/6/2022
-
-# version -> 1.9010 >> 17/6/2022
-
+#This project is based on developing a response website. All the achievements till date and the related projects which I am working are displayed here. You can learn new skillset from this website by opening code files. Also if you want to add any new features you can add then commit it, after reviewing, your commit will be published in the next release. 
 # version -> 2.0010
 
 # FUTURE UPDATES
