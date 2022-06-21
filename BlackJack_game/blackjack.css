@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(Images/demonS03.jpg);
+    background-image: url(../Images/demonS03.jpg);
     
 }
 
@@ -70,7 +70,7 @@ h2 {
 /* Game rule page */
 
 .game-rule-manual {
-    background-image: url(Images/blackjack.jpg);
+    background-image: url(../Images/blackjack.jpg);
 }
 
 #game-rule a {
