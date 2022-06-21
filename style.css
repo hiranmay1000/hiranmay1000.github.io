@@ -54,8 +54,7 @@ html {
 }
 
 .page2{
-    height: fit-content;
-    padding-top: 1px;
+    padding: 1px 0px;
     scroll-snap-align: start;
 }
 
@@ -76,7 +75,7 @@ html {
 header {
     width: 100%;
     height: 100px;
-    background-image: linear-gradient(to bottom left, #7a7a7a, #fff);
+    background-image: linear-gradient(to top right, #292929, #e6e6e6);
 }
 
 header #logo {
@@ -91,7 +90,7 @@ header #logo {
 }
 
 #logo a {
-    color: #e63946;
+    color: #eaeaea;
 }
 
 #login-btn {
@@ -390,6 +389,10 @@ footer ul li a {
 
 @media only screen and (min-width: 1224px) {
     /* HEADER DESKTOP */
+
+    header{
+        background-image: linear-gradient(to bottom right, #3f3f3f, #ffffff);
+    }
     header #logo {
         float: left;
         padding: 0 40px 0 60px;
