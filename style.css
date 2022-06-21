@@ -378,7 +378,7 @@ footer ul li a {
 /* footer-end */
 
 /* TABLET VERSION */
-@media only screen and (min-width: 724px) {
+@media only screen and (min-width: 680px) {
 
     #logo {
         float: left;
