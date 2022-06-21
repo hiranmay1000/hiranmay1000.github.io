@@ -54,7 +54,7 @@ html {
 }
 
 .page2{
-    height: 810px;
+    height: fit-content;
     padding-top: 1px;
     scroll-snap-align: start;
 }
