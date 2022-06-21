@@ -44,10 +44,9 @@ html {
 
 /* website transition */
 .full-webpage{
-    scroll-snap-type: y mandatory;
+    scroll-snap-type:y proximity;
     overflow-y: scroll;
     height: 100vh;
-    scroll-behavior: smooth;
 }
 .page1, .page3, .page4{ 
     height: 100vh;
@@ -55,8 +54,15 @@ html {
 }
 
 .page2{
+    height: 810px;
     padding-top: 1px;
     scroll-snap-align: start;
+}
+
+.page2::after{ /*for long pages --> more than 100vh*/
+    content: "";
+    display: block;
+    scroll-snap-align: end;
 }
 
 .page5{
