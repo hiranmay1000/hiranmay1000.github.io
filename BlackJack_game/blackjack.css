@@ -8,11 +8,20 @@
 }
 
 body {
-    height: 100vh;
     background-image: url(../Images/poker-cards.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.interface{
+    margin: auto;
+    display: table;
+    height: 100vh;
+}
+.vertical-align{
+    display: table-cell;
+    vertical-align: middle;
 }
 
 button {
@@ -22,7 +31,7 @@ button {
     font-weight: bold;
     font-size: large;
     border-radius: 5px;
-    background: #010f39;
+    background: #2c4181;
     margin-top: 20px;
     transition: ease-in 0.2s;
 }
@@ -50,7 +59,8 @@ button {
     box-shadow: inset 220px 0 0 0 rgb(161, 79, 244);
 }
 
-#suffle-btn a{
+#quit-btn a{
+    display: block;
     color: red;
 }
 
@@ -87,8 +97,11 @@ h2 {
 /* Game rule page */
 
 .game-rule-manual {
-    height: 100vh;
     background-image: url(../Images/dice-glowing-lights.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 70%;
 }
 
 #game-rule a {
