@@ -6,8 +6,9 @@ let hasBlackjack = false;
 let mesEl = document.getElementById("mes-el");
 let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("cards-el");
-let newGame = document.getElementById("start-game-btn");
+let newGame = document.getElementById("startGameBtn");
 let getName = document.getElementById("new-player");
+let shuffleBtn = document.getElementById("suffle-btn");
 
 function startGame() {
     isAlive = true;
@@ -18,6 +19,11 @@ function startGame() {
     newGame.textContent = "NEW GAME";
     getName.textContent = "Player-1";
     renderGame();
+    if(isAlive === false){
+        shuffleBtn.style.display = "none";
+    }else {
+        shuffleBtn.style.display = "block";
+    }
 }
 
 function getRandomCard() {
@@ -33,11 +39,11 @@ function getRandomCard() {
 function renderGame() {
 
     cardEl.textContent = "Cards: ";
-    for (let i = 0; i < cards.length; i++) {
-        cardEl.textContent += cards[i] + " ";
+    for (let i = 0; i < cards.length; ++i) {
+        cardEl.textContent += cards[i] + " + ";
     }
 
-    sumEl.textContent = "Sum: " + sum;
+    sumEl.textContent = "TOTAL SCORE: " + sum;
     if (sum <= 20) {
         message = "Do you want to draw a new card?";
         newGame.textContent = "NEW GAME";
@@ -51,6 +57,24 @@ function renderGame() {
         message = "You have lost";
     }
     mesEl.textContent = message;
+    displayBtn();
+    displayShuffleBtn()
+}
+
+function displayBtn() {
+    if (isAlive === true && hasBlackjack === false) {
+        newGame.style.display = "none";
+    } else if (isAlive === false || hasBlackjack=== true) {
+        newGame.style.display = "block";
+    }
+}
+
+function displayShuffleBtn(){
+    if (isAlive === false || hasBlackjack === true) {
+        shuffleBtn.style.display = "none";
+    } else if(hasBlackjack === true){
+        shuffleBtn.style.display = "block";
+    }
 }
 
 function newCard() {

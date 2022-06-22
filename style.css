@@ -48,7 +48,7 @@ html {
     overflow-y: scroll;
     height: 100vh;
 }
-.page1, .page3, .page4{ 
+.page1, .page3, .page4, .page6{ 
     height: 100vh;
     scroll-snap-align: start;
 }
@@ -220,7 +220,7 @@ main .index-banner {
     display: table;
 }
 
-.previews .vertical-centre {
+.previews .vertical-center {
     display: table-cell;
     vertical-align: middle;
 }

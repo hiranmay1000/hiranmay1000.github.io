@@ -1,5 +1,5 @@
 * {
-    font-family: lato;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -8,8 +8,11 @@
 }
 
 body {
-    background-image: url(../Images/retro_car.jpg);
-    
+    height: 100vh;
+    background-image: url(../Images/poker-cards.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 button {
@@ -28,12 +31,13 @@ button {
     color: antiquewhite;
 }
 
-#start-game-btn,
+#startGameBtn,
 #suffle-btn {
+    margin: 5px auto;
     color: #ffffff;
 }
 
-#start-game-btn:hover,
+#startGameBtn:hover,
 #suffle-btn:hover,
 #back-to-game:hover {
     cursor: pointer;
@@ -46,10 +50,15 @@ button {
     box-shadow: inset 220px 0 0 0 rgb(161, 79, 244);
 }
 
+#suffle-btn a{
+    color: red;
+}
+
 /* Game heading */
 h1 {
     padding-top: 150px;
-    color: #dbdbdb;
+    color: #ce3ef6;
+    text-shadow: 3px 3px 12px #111111;
 }
 
 /*Game main info */
@@ -67,10 +76,19 @@ h2 {
     text-align: center;
     position: relative;
 }
+
+#sum-el{
+    color: green;
+}
+
+#cards-el{
+    color: pink;
+}
 /* Game rule page */
 
 .game-rule-manual {
-    background-image: url(../Images/blackjack.jpg);
+    height: 100vh;
+    background-image: url(../Images/dice-glowing-lights.jpg);
 }
 
 #game-rule a {
