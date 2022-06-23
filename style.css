@@ -68,6 +68,10 @@ html {
     scroll-snap-align: end;
 }
 
+.page1, .page2, .page3, .page4, .page5, .page6{
+    background-image: linear-gradient(to bottom left , #fff , #bababa);
+}
+
 /* website transition end*/
 
 /* HEADER */
@@ -79,7 +83,7 @@ html {
 header {
     width: 100%;
     height: 80px;
-    background-image: linear-gradient(to top right, #121212, #ffffff);
+    background-image: linear-gradient(to top right, #282828, #ffffff);
 }
 
 header #logo {
@@ -95,7 +99,7 @@ header #logo {
 }
 
 #logo a {
-    color: #eaeaea;
+    color: #fff;
 }
 
 #login-btn {
@@ -117,25 +121,29 @@ header nav ul li {
 
 header nav ul li a {
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
 }
 @media only screen and (max-width: 680px) {
-    
+    header{
+        position: relative;
+    }
+
     header nav ul {
-        margin: 0px auto;
         position: fixed;
+        margin: 0px auto;
         top: 80px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: linear-gradient(to top right, #181818, #828282);
+        background-image: linear-gradient(to top right, #2d2d2d, #bfbfbf);
         width: 100%;
         height: 100vh;
         padding: 40px 0 40px 0;
-        right: -100%;
         transition: 0.3s ease-in;
+        right: -1000%;
     }
+
 
 .nav-menu a{
     display: block;
@@ -155,7 +163,7 @@ header nav ul li a {
 .bars{
     flex-direction: column;
     display: block;
-    background-color: #343434;
+    background-color: #494949;
     height: 3px;
     width: 25px;
     margin-top: 6px;
@@ -174,9 +182,9 @@ header nav ul li a {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-.nav-menu.active{
-    right: 0%;
-}
+    .nav-menu.active{
+        right: 0%;
+    }
 }
 /* menus-end */
 
@@ -203,7 +211,7 @@ main .index-banner {
     font-size: 42px;
     text-align: center;
     text-transform: uppercase;
-    color: #f3f3f3;
+    color: #a8dadc;
     line-height: 70px;
     text-shadow: 3px 3px 15px #111;
 }
@@ -559,7 +567,7 @@ footer ul li a {
         height: 50px;
         width: 400px;
         margin: auto;
-        margin-top: 210px;
+        margin-top: 190px;
         display: flex;
         box-shadow: 5px 5px 13px #111;
     }
@@ -671,11 +679,12 @@ footer ul li a {
     }
     
     main .index-banner {
-        height: 570px;
-        background-image: url(./Images/programmer-codes.jpg);
+        height: 550px;
+        background-image: url(./Images/dark_laptop.jpg);
     }
 
     .index-banner h2 {
+        color: #fff;
         font-size: 54px;
         line-height: 70px;
         text-shadow: 1px 1px 5px grey;

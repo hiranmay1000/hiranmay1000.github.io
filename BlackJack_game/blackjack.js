@@ -7,8 +7,9 @@ let mesEl = document.getElementById("mes-el");
 let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("cards-el");
 let newGame = document.getElementById("startGameBtn");
-let getName = document.getElementById("new-player");
-let shuffleBtn = document.getElementById("suffle-btn");
+let getCard = document.getElementById("get-card-btn");
+
+getCard.style.display = "none";
 
 function startGame() {
     isAlive = true;
@@ -17,7 +18,6 @@ function startGame() {
     cards = [firstcard, secondcard];
     sum = firstcard + secondcard;
     newGame.textContent = "NEW GAME";
-    getName.textContent = "Player-1";
     renderGame();
 }
 
@@ -42,36 +42,27 @@ function renderGame() {
     if (sum <= 20) {
         isAlive = true;
         message = "Do you want to draw a new card?";
-        newGame.textContent = "NEW GAME";
+        newGame.textContent = "NEW fdfv GAME";
+        newGame.style.display = "none";
+        getCard.style.display = "block";
+
     } else if (sum === 21) {
-        newGame.textContent = "START NEW GAME";
+        isAlive = false;
         hasBlackjack = true;
         message = "Yeh! you got blackjack";
+        newGame.style.display = "block";
+        getCard.style.display = "none";
+
     } else if (sum > 21) {
-        newGame.textContent = "START NEW GAME";
         isAlive = false;
+        hasBlackjack = false;
         message = "You have lost";
+        newGame.style.display = "block";
+        getCard.style.display = "none";
+
     }
     mesEl.textContent = message;
-    newGameBtn();
-    displayShuffleBtn()
 }
-
-function newGameBtn() {
-    if (isAlive === true && hasBlackjack === false) {
-        newGame.style.display = "none";
-    } else if (isAlive === false || hasBlackjack === true) {
-        newGame.style.display = "block";
-    }
-}
-
-// function displayShuffleBtn(){
-//     if (isAlive === false || hasBlackjack === true) {
-//         shuffleBtn.style.display = "none";
-//     } else if(isAlive === true && hasBlackjack === false){
-//         shuffleBtn.style.display = "block";
-//     }
-// }
 
 function newCard() {
     if (isAlive === true && hasBlackjack === false) {
@@ -79,8 +70,6 @@ function newCard() {
         cards.push(newCard);
         sum += newCard;
         newGame.textContent = "START NEW GAME";
-        renderGame()
-    } else if(isAlive === true && hasBlackjack === true){
         renderGame();
     }
 }

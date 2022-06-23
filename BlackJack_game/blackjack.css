@@ -41,20 +41,20 @@ button {
 }
 
 #startGameBtn,
-#suffle-btn {
+#get-card-btn {
     margin: 5px auto;
     color: #ffffff;
 }
 
 #startGameBtn:hover,
-#suffle-btn:hover,
+#get-card-btn:hover,
 #back-to-game:hover {
     cursor: pointer;
     background-color: rgb(239, 160, 40);
     box-shadow: inset 220px 0 0 0 green;
 }
 
-#suffle-btn:hover {
+#get-card-btn:hover {
     background-color: aquamarine;
     box-shadow: inset 220px 0 0 0 rgb(161, 79, 244);
 }
