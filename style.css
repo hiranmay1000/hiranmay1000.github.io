@@ -163,28 +163,30 @@ header nav ul li a {
     color: #fff;
 }
 
+#hamburger {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 0;
+}
+
 #see-all {
     color: #e1ee12;
 }
 
 @media only screen and (max-width: 680px) {
     header {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         top: 0% !important;
     }
 
     header nav ul {
         position: fixed;
-        margin: 0px auto;
         top: 80px;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: center;
-        background-image: linear-gradient(to top right, #2d2d2d, #bfbfbf);
+        background-image: linear-gradient(to top right, #2d2d2d, #bfbfbf) !important;
         width: 100%;
         height: 100vh;
         padding: 40px 0 40px 0;
@@ -213,7 +215,7 @@ header nav ul li a {
 
     .bars {
         flex-direction: column;
-        background-color: #494949;
+        background-color: #b8b8b8;
         height: 3px;
         width: 25px;
         margin-top: 6px;
@@ -317,10 +319,8 @@ main .index-banner {
 .all-elements a:hover {
     color: orange;
     transition: 0.3s ease-in;
+    box-shadow: 2px 2px 5px #a8dadc;
 }
-
-
-
 /* MOBILE VERSION ................................... */
 
 /* PREVIEWS  */
@@ -672,7 +672,6 @@ footer ul li a {
 
     header {
         background-image: linear-gradient(to top right, #3f3f3f, #ffffff);
-        transition: 0.3s ease-in;
     }
 
     header nav ul li {

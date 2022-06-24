@@ -7,14 +7,12 @@ window.onscroll = function () { scrollFunction() };
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-})
-
-querySelector.addEventListener(".nav-link").forEach(element => {
-    element.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    })
 });
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}));
 // ============HAMBURGER-ICON-END=============
 
 // ==============NAV-BAR-ONSCROLL===============
@@ -26,8 +24,8 @@ function scrollFunction() {
         document.getElementById("navbar").style.height = "60px";
         document.getElementById("navbar").style.display = "flex";
         document.getElementById("navbar").style.justifyContent = "space-between";
-        
-        
+
+
         document.getElementById("login-container").style.display = "flex";
         document.getElementById("login-container").style.alignItems = "center";
         document.getElementById("login-container").style.justifyContent = "center";
@@ -42,12 +40,12 @@ function scrollFunction() {
 
         document.getElementById("index-banner").style.paddingTop = "80px";
 
-        
+
         ["link1", "link2", "link3", "link4", "link5"].forEach(function (id) {
             document.getElementById(id).style.lineHeight = "60px";
             document.getElementById(id).style.fontSize = "14px";
         });
-        
+
     } else {
 
         document.getElementById("nav-menu").style.float = "left";
