@@ -10,7 +10,7 @@
         <link rel="icon" href="./Images/Logoes/h.png" />
     </head>
     <body id="section1">
-        <div class="full-webpage">
+        <div id="full-webpage">
             <main>
                 <!-- page1 -->
                 <div class="page1">
@@ -21,40 +21,37 @@
                         </ul>
                     </div>
                    <!-- HEADER -->
-                <header>
+                <header id="navbar">
                     <div id="logo">
                         <a href="index.html"
                         >HIRAN<span style="color: orange;">MAY</span>
                         </a>
                     </div>
-                    <nav class="main-menu">
-                            <ul class="nav-menu">
-                                <li><a class="nav-link" href="index.html" id="home">HOME</a></li>
-                                <li>
-                                    <a class="nav-link"
+                    <nav id="main-menu">
+                            <ul id="nav-menu">
+                                <li class="nav-list-items"><a id="nav-link" href="index.html   ">HOME</a></li>
+                                <li class="nav-list-items">
+                                    <a id="nav-link"
                                         href="https://www.canva.com/design/DAFCJDeZwhA/bcYs2WTvM1RWttOih84hUg/edit?utm_content=DAFCJDeZwhA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                                        >RESUME</a
-                                    >
+                                        >RESUME</a></li>
+                                <li class="nav-list-items"><a id="nav-link" href="blog.html">BLOG</a></li>
+                                <li class="nav-list-items">
+                                    <a id="nav-link" href="Projects-page/projects.html"
+                                    >PROJECTS</a>
                                 </li>
-                                <li><a class="nav-link" id="blog" href="">BLOG</a></li>
-                                <li>
-                                    <a class="nav-link" id="projects" href="./Projects-page/projects.html"
-                                    >PROJECTS</a
-                                    >
-                                </li>
-                                <li><a class="nav-link" id="contacts" href="">CONTACTS</a></li>
+                                <li class="nav-list-items"><a id="nav-link" href="contacts.html">CONTACTS</a></li>
                             </ul>
+                            <form action="">
+                                <div id="login-container">
+                                    <button id="login-btn" type="button">LOG IN</button>
+                                </div>
+                            </form>
                         <div class="hamburger">
                             <div class="bars"></div>
                             <div class="bars"></div>
                             <div class="bars"></div>
                         </div>
     
-                        <form action="">
-                            <div class="login-container">
-                                <button id="login-btn" type="button">LOG IN</button>
-                            </div>
-                        </form>
                     </nav>
                 </header>
                 <!-- HEADER-END -->
@@ -137,8 +134,8 @@
                                 </a>
                             </div>
                             <div class="element-sq">
-                                <a href="">
-                                    <h3 class="element-title">PROJECT 6</h3>
+                                <a id="see-all" href="">
+                                    <h3 class="element-title"> <em>SEE ALL</em> </h3>
                                 </a>
                             </div>
                         </div>
@@ -219,15 +216,6 @@
                 </div>
                 <!-- page4end    -->
 
-                <!-- page6 -->
-                <div class="page6">
-                    <form action="/action_page.php">
-                        <p><label for="h_web_review">Give a feedback:</label></p>
-                        <textarea name="review_input" id="message" cols="30" rows="10"></textarea>
-                        <br> <input type="submit" value="SENDs">
-                    </form>
-                </div>
-                <!-- page6 end -->
             </main>
             <div class="page5">
                 <footer>
@@ -293,60 +281,6 @@
                 </footer>
             </div>
         </div>
-
-            <!-- UP-DOWN-BUTTON -->
-        <!-- <div class="up-down-btn">
-            <div id="up-btn">
-                <a href="#section1"> < </a>
-            </div>
-            <div id="down-btn">
-                <a href="#footer-end">></a>
-            </div>
-        </div> -->
-        <!-- UP-DOWN-BUTTON end -->
-
-        <!-- STICKY-SOCIAL-MEDIA-LINKS -->
-            <!-- <div class="social-media-container">
-                <ul>
-                    <li>
-                        <a
-                            href="https://www.linkedin.com/in/hiranmay-mandal-006aa8217"
-                            ><img
-                                src="./Images/Logoes/linkedinlogo4.png"
-                                alt="ln logo"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/hiranmay_44/"
-                            ><img
-                                src="./Images/Logoes/instagramlogo5.png"
-                                alt="insta logo"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/hiranmay20"
-                            ><img
-                                src="./Images/Logoes/facebooklogo6.png "
-                                alt="fb logo"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/hiranmay1000"
-                            ><img
-                                src="./Images/Logoes/twitterlogo4.png"
-                                alt="twtr logo"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href="https://discord.com/channels/@me"
-                            ><img
-                                src="./Images/Logoes/discordlogo5.png"
-                                alt="discord logo"
-                        /></a>
-                    </li>
-                </ul>
-            </div> -->
-            <!-- STICKY-SOCIAL-MEDIA-LINKS-END -->
 
         <script src="main.js"></script>
 

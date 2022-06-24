@@ -43,11 +43,12 @@ html {
 }
 
 /* website transition */
-.full-webpage{
+/* #full-webpage{
     scroll-snap-type:y mandatory;
     overflow-y: scroll;
     height: 100vh;
-}
+} */
+
 .page1, .page3, .page4, .page6{ 
     height: 100vh;
     scroll-snap-align: start;
@@ -68,6 +69,7 @@ html {
     scroll-snap-align: end;
 }
 
+/*All page linear background*/
 .page1, .page2, .page3, .page4, .page5, .page6{
     background-image: linear-gradient(to bottom left , #fff , #bababa);
 }
@@ -75,7 +77,6 @@ html {
 /* website transition end*/
 
 /* HEADER */
-
 .contacts-banner{
     display: none;
 }
@@ -84,6 +85,8 @@ header {
     width: 100%;
     height: 80px;
     background-image: linear-gradient(to top right, #282828, #ffffff);
+    display: flex;
+    justify-content: space-between;
 }
 
 header #logo {
@@ -96,6 +99,12 @@ header #logo {
     padding-left: 30px;
     line-height: 80px;
     float: left;
+    transition: 0.3s ease-in;
+}
+
+#navbar {
+    overflow: hidden;
+    transition: 0.3s ease-in;
 }
 
 #logo a {
@@ -124,6 +133,10 @@ header nav ul li a {
     font-size: 14px;
     color: #fff;
 }
+
+#see-all {
+    color: #e1ee12;
+}
 @media only screen and (max-width: 680px) {
     header{
         position: relative;
@@ -136,6 +149,7 @@ header nav ul li a {
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: center;
         background-image: linear-gradient(to top right, #2d2d2d, #bfbfbf);
         width: 100%;
         height: 100vh;
@@ -145,12 +159,12 @@ header nav ul li a {
     }
 
 
-.nav-menu a{
+#nav-menu a{
     display: block;
-    padding: 20px;
+    transition: 0.3s ease-in;
 }
 
-.nav-menu a:hover{
+#nav-menu a:hover{
     color: orange;
 }
 
@@ -158,6 +172,7 @@ header nav ul li a {
     float: right;
     margin: 26px 40px 0 0;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .bars{
@@ -182,8 +197,9 @@ header nav ul li a {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-    .nav-menu.active{
+    #nav-menu.active{
         right: 0%;
+        transition: 0.3s ease-in;
     }
 }
 /* menus-end */
@@ -194,6 +210,7 @@ header nav ul li a {
 main .index-banner {
     width: 100%;
     height: calc(100vh - 80px);
+    padding-top: 76px;
     background-image: url(./Images/dark_laptop.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -518,7 +535,7 @@ footer ul li a {
     /* HEADER DESKTOP */
 
     .contacts-banner{
-        height: 28px;
+        height: 25px;
         width: 100%;
         background-color: grey;
         display: block;
@@ -527,7 +544,7 @@ footer ul li a {
     }
     
     .contacts-details{
-        font-size: 14px;
+        font-size: 12px;
         list-style: none;
         float: right;
         padding: 3px 12px;
@@ -549,18 +566,13 @@ footer ul li a {
     header #logo {
         float: left;
         padding: 0 40px 0 60px;
-        margin-top: 30px;
-        line-height: 20px;
-        border-right: 3px solid #111;
+        line-height: 80px;
     }
-
-    #myLinks ul {
-        display: block;
-    }
-
-    #blog,
-    #contacts {
-        display: block;
+    #login-container{
+        width: 200px;
+        background-color: red;
+        height: 80px;
+        display: flex;
     }
 
     .search-box {
@@ -615,10 +627,9 @@ footer ul li a {
         box-shadow: 2px 2px #e63946;
     }
 
-    .login-container {
+    #login-container {
         padding: 0 60px;
         float: right;
-        margin-top: 31px;
         line-height: 38px;
         border-left: 3px solid #111;
     }
@@ -629,20 +640,19 @@ footer ul li a {
         transition: 0.2s;
         box-shadow: 2px 2px 5px #a8dadc;
     }
-
-    header nav ul {
-        float: left;
-        padding: 0 60px 0 40px;
+    
+    header nav ul{
+        transition: 0.3s;
     }
 
     header nav ul li {
-        float: right;
+        float: left;
     }
 
     header nav ul li a {
         display: block;
         padding: 0 14px;
-        color: #fff;
+        color: #ffffff;
         line-height: 80px;
     }
     header nav ul li a:hover {
