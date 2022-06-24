@@ -49,35 +49,44 @@ html {
     height: 100vh;
 } */
 
-.page1, .page3, .page4, .page6{ 
+.page1,
+.page3,
+.page4,
+.page6 {
     height: 100vh;
     scroll-snap-align: start;
 }
 
-.page2{
+.page2 {
     padding: 1px 0px;
     scroll-snap-align: start;
 }
 
-.page2::after{ /*for long pages --> more than 100vh*/
+.page2::after {
+    /*for long pages --> more than 100vh*/
     content: "";
     display: block;
     scroll-snap-align: end;
 }
 
-.page5{
+.page5 {
     scroll-snap-align: end;
 }
 
 /*All page linear background*/
-.page1, .page2, .page3, .page4, .page5, .page6{
-    background-image: linear-gradient(to bottom left , #fff , #bababa);
+.page1,
+.page2,
+.page3,
+.page4,
+.page5,
+.page6 {
+    background-image: linear-gradient(to bottom left, #fff, #bababa);
 }
 
 /* website transition end*/
 
 /* HEADER */
-.contacts-banner{
+.contacts-banner {
     display: none;
 }
 
@@ -95,11 +104,42 @@ header #logo {
     font-size: 35px;
     font-weight: 100px;
     text-align: left;
-    display: block;
-    padding-left: 30px;
     line-height: 80px;
-    float: left;
     transition: 0.3s ease-in;
+    left: 50px;
+}
+
+#login-container {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-btn {
+    float: right;
+    font-family: "Poppins", sans-serif;
+    height: 40px;
+    width: 80px;
+    border: none;
+    color: #e1ee12;
+    background-image: linear-gradient(to bottom right, #828282, #03071e);
+    box-shadow: 3px 3px 13px #111;
+    transition: 0.3s ease-in;
+}
+
+#login-btn:hover {
+    cursor: pointer;
+    color: orange;
+    transition: 0.2s;
+    box-shadow: 2px 2px 5px #a8dadc;
+}
+
+header #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #navbar {
@@ -109,17 +149,6 @@ header #logo {
 
 #logo a {
     color: #fff;
-}
-
-#login-btn {
-    float: right;
-    font-family: "Montserrat", sans-serif;
-    height: 44px;
-    width: 90px;
-    border: none;
-    color: #a8dadc;
-    background-color: #03071e;
-    display: none;
 }
 
 /* menus */
@@ -137,9 +166,14 @@ header nav ul li a {
 #see-all {
     color: #e1ee12;
 }
+
 @media only screen and (max-width: 680px) {
-    header{
+    header {
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0% !important;
     }
 
     header nav ul {
@@ -155,53 +189,55 @@ header nav ul li a {
         height: 100vh;
         padding: 40px 0 40px 0;
         transition: 0.3s ease-in;
-        right: -1000%;
+        left: -1000%;
     }
 
+    header nav ul li a{
+        line-height: 80px;
+    }
 
-#nav-menu a{
-    display: block;
-    transition: 0.3s ease-in;
-}
+    #nav-menu a {
+        display: block !important;
+        transition: 0.3s ease-in;
+    }
 
-#nav-menu a:hover{
-    color: orange;
-}
+    #nav-menu a:hover {
+        color: orange;
+    }
 
-.hamburger{
-    float: right;
-    margin: 26px 40px 0 0;
-    cursor: pointer;
-    overflow: hidden;
-}
+    .hamburger {
+        padding: 0 20px;
+        cursor: pointer;
+        overflow: hidden;
+    }
 
-.bars{
-    flex-direction: column;
-    display: block;
-    background-color: #494949;
-    height: 3px;
-    width: 25px;
-    margin-top: 6px;
-    transition: 0.3s;
-}
+    .bars {
+        flex-direction: column;
+        background-color: #494949;
+        height: 3px;
+        width: 25px;
+        margin-top: 6px;
+        transition: 0.3s;
+    }
 
-.hamburger.active .bars:nth-child(1){
-    transform: translateY(10px) rotate(45deg);
-}
+    .hamburger.active .bars:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
 
-.hamburger.active .bars:nth-child(2){
-    opacity: 0;
-}
+    .hamburger.active .bars:nth-child(2) {
+        opacity: 0;
+    }
 
-.hamburger.active .bars:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
-}
+    .hamburger.active .bars:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 
-    #nav-menu.active{
-        right: 0%;
+    #nav-menu.active {
+        left: 0%;
         transition: 0.3s ease-in;
     }
 }
+
 /* menus-end */
 
 
@@ -210,18 +246,19 @@ header nav ul li a {
 main .index-banner {
     width: 100%;
     height: calc(100vh - 80px);
-    padding-top: 76px;
     background-image: url(./Images/dark_laptop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: table;
+    transition: 1s ease-in;
 }
 
 .vertical-center {
     display: table-cell;
     vertical-align: middle;
 }
+
 /* TITLE */
 .index-banner h2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -232,6 +269,7 @@ main .index-banner {
     line-height: 70px;
     text-shadow: 3px 3px 15px #111;
 }
+
 /* title-2 */
 .index-banner p {
     font-family: sans-serif;
@@ -259,24 +297,24 @@ main .index-banner {
 /* 2nd-page-only-mobile-version */
 
 .all-elements {
-    margin:auto;
+    margin: auto;
     width: 100%;
     height: 800px;
 }
 
-.all-elements a{
+.all-elements a {
     height: 120px;
     margin: 12px 16px;
     display: block;
     text-align: center;
     line-height: 120px;
     box-shadow: 5px 5px 13px #111;
-    background-image: linear-gradient(to bottom right, #242424, #03071e );
+    background-image: linear-gradient(to bottom right, #242424, #03071e);
     color: #fff;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.all-elements a:hover{
+.all-elements a:hover {
     color: orange;
     transition: 0.3s ease-in;
 }
@@ -336,6 +374,7 @@ main .index-banner {
     margin: 0 auto;
     margin-top: 800px;
 }
+
 /* project-page-end */
 
 .previews p a {
@@ -371,26 +410,28 @@ main .index-banner {
     height: 15px;
 }
 
-#github-code-link{
+#github-code-link {
     margin-top: 15px;
     height: fit-content;
     width: fit-content;
-    background-color: #e9e9e9  ;
+    background-color: #e9e9e9;
 }
 
-#github-code-link a{
+#github-code-link a {
     padding: 0 20px;
     display: block;
     color: #187498;
     line-height: 60px;
 }
-#github-code-link a:hover{
+
+#github-code-link a:hover {
     text-decoration: underline;
     color: orange;
 }
+
 /* MY INFO END */
 
-#back-to-top {
+.refresh-btn {
     font-size: 14px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #03071e;
@@ -401,10 +442,10 @@ main .index-banner {
     height: 40px;
     margin-top: 35px;
     box-shadow: 5px 5px 13px #111;
-    background-image: linear-gradient(to bottom right, #828282, #03071e );
+    background-image: linear-gradient(to bottom right, #828282, #03071e);
 }
 
-#back-to-top a {
+.refresh-btn a {
     display: block;
     color: #fff;
 }
@@ -414,7 +455,7 @@ main .index-banner {
 footer {
     overflow: hidden;
     height: 350px;
-    background-image: linear-gradient(to bottom right, #a8dadc,#004864 );
+    background-image: linear-gradient(to bottom right, #a8dadc, #004864);
 }
 
 footer ul {
@@ -435,15 +476,16 @@ footer ul li a {
 
 /* social-media */
 
-.social-media ul{
+.social-media ul {
     float: right;
     padding-right: 50px;
 }
 
-.social-media ul li a{
+.social-media ul li a {
     line-height: 30px;
 }
-.social-media img{
+
+.social-media img {
     width: 46px;
 }
 
@@ -457,37 +499,31 @@ footer ul li a {
         float: left;
     }
 
-    main .index-banner{
+    main .index-banner {
         background-image: url(./Images/amoled-colorful-sky-4433aeo37f19eqnt.jpg);
     }
 
-    .hamburger{
-        display: none;
-    }
-
-    #myLinks ul {
-        display: block;
-    }
-
-    nav ul{
+    nav ul {
         padding-right: 30px;
         float: right;
+        transition: 0.3s;
     }
 
-    nav ul li{
+    nav ul li {
         float: left;
     }
 
-    nav ul li a{
+    nav ul li a {
         display: block;
         line-height: 80px;
         padding: 0 10px;
     }
 
-    nav ul li a:hover{
+    nav ul li a:hover {
         color: orange;
         transition: .2s ease-in;
     }
+
     #blog,
     #contacts {
         display: block;
@@ -496,24 +532,24 @@ footer ul li a {
     .previews p {
         width: 500px;
     }
-    
-    /* all elements */
-    .all-elements{
-        width: 700px;
-        }
 
-    .element-container{
+    /* all elements */
+    .all-elements {
+        width: 700px;
+    }
+
+    .element-container {
         padding-top: 80px;
         backdrop-filter: blur(12px);
     }
-    
+
     .all-elements a {
         width: 100%;
         height: 250px;
         line-height: 250px;
     }
 
-    .all-elements div{
+    .all-elements div {
         margin: 10px;
         float: left;
     }
@@ -521,20 +557,21 @@ footer ul li a {
     .all-elements .element-sq {
         width: 200px;
     }
+
     .all-elements .element-rec {
         width: 200px;
     }
 
 
 }
+
 /* TABLET VERSION END */
 
 /* DESKTOP VERSION */
-
 @media only screen and (min-width: 1024px) {
     /* HEADER DESKTOP */
 
-    .contacts-banner{
+    .contacts-banner {
         height: 25px;
         width: 100%;
         background-color: grey;
@@ -542,37 +579,27 @@ footer ul li a {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: #d3d3d3;
     }
-    
-    .contacts-details{
+
+    .contacts-details {
         font-size: 12px;
         list-style: none;
         float: right;
         padding: 3px 12px;
     }
-    
-    .contacts-details a{
+
+    .contacts-details a {
         text-decoration: underline;
         color: #d3d3d3;
     }
 
-    .contacts-details a:hover{
+    .contacts-details a:hover {
         color: orange;
         transition: 0.3s ease-in;
     }
 
-    header{
-        background-image: linear-gradient(to top right, #3f3f3f, #ffffff);
-    }
     header #logo {
         float: left;
-        padding: 0 40px 0 60px;
         line-height: 80px;
-    }
-    #login-container{
-        width: 200px;
-        background-color: red;
-        height: 80px;
-        display: flex;
     }
 
     .search-box {
@@ -591,7 +618,7 @@ footer ul li a {
         height: 50px;
         color: #fff;
         font-size: 16px;
-        background-image: linear-gradient(to bottom right, #828282, #03071e );
+        background-image: linear-gradient(to bottom right, #828282, #03071e);
     }
 
     .container-btn button:hover {
@@ -612,26 +639,28 @@ footer ul li a {
         color: #000000;
     }
 
-    .search-input:focus{
+    .search-input:focus {
         outline: none;
-    }   
+    }
+
+    #login-container {
+        width: 280px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     #login-btn {
         float: right;
         font-family: "Poppins", sans-serif;
-        height: 44px;
-        width: 90px;
+        height: 38px;
+        width: 85px;
         border: none;
-        color: #a8dadc;
-        background-color: #03071e;
-        box-shadow: 2px 2px #e63946;
-    }
-
-    #login-container {
-        padding: 0 60px;
-        float: right;
-        line-height: 38px;
-        border-left: 3px solid #111;
+        color: #e1ee12;
+        background-image: linear-gradient(to bottom right, #828282, #03071e);
+        box-shadow: 3px 3px 13px #111;
+        transition: 0.3s ease-in;
     }
 
     #login-btn:hover {
@@ -640,9 +669,10 @@ footer ul li a {
         transition: 0.2s;
         box-shadow: 2px 2px 5px #a8dadc;
     }
-    
-    header nav ul{
-        transition: 0.3s;
+
+    header {
+        background-image: linear-gradient(to top right, #3f3f3f, #ffffff);
+        transition: 0.3s ease-in;
     }
 
     header nav ul li {
@@ -654,26 +684,29 @@ footer ul li a {
         padding: 0 14px;
         color: #ffffff;
         line-height: 80px;
+        transition: 0.3s ease-in;
     }
+
     header nav ul li a:hover {
         color: orange;
         transition: 0.2s;
     }
 
     /* MAIN */
-
-    
     .title h2 {
         font-family: sans-serif;
         width: 800px;
         margin: 0 auto;
     }
+
     .I-am {
         max-width: 800px;
     }
+
     .software {
         float: left;
     }
+
     .title-2 p {
         font-family: sans-serif;
         width: 850px;
@@ -687,7 +720,7 @@ footer ul li a {
         border: 3px solid #a8dadc;
         backdrop-filter: blur(5px);
     }
-    
+
     main .index-banner {
         height: 550px;
         background-image: url(./Images/dark_laptop.jpg);
@@ -699,26 +732,29 @@ footer ul li a {
         line-height: 70px;
         text-shadow: 1px 1px 5px grey;
     }
+
     .index-banner h3 {
         backdrop-filter: blur(1px);
         border-radius: 30px;
     }
 
     /* all elements */
-    .all-elements{
+    .all-elements {
         width: 1000px;
     }
 
-    .element-container{
+    .element-container {
         backdrop-filter: blur(12px);
     }
 
     .all-elements .element-sq {
         width: 220px;
     }
+
     .all-elements .element-rec {
         width: 440px;
     }
+
     /* .all-elements-end */
 
     /* hello-world */
@@ -738,6 +774,7 @@ footer ul li a {
         background-size: cover;
         display: table;
     }
+
     .my-info-blury-container {
         text-align: center;
         border: 2px solid #a8dadc;
@@ -766,33 +803,36 @@ footer ul li a {
         height: 100vh;
         margin: 0 auto;
     }
+
     .previews h3 {
         font-family: sans-serif;
         font-size: 52px;
         text-transform: uppercase;
         text-align: center;
     }
+
     .previews p {
         font-family: sans-serif;
         text-align: center;
         width: 100%;
     }
 
-    #back-to-top {
+    .refresh-btn {
         width: 180px;
         height: 45px;
         line-height: 45px;
         margin-top: 50px;
     }
 
-    #back-to-top a {
+    .refresh-btn a {
         font-size: 18px;
     }
 
-    #back-to-top a:hover {
+    .refresh-btn a:hover {
         color: orange;
         transition: 0.2s;
     }
+
     /* previews section end */
 
     /* FOOTER */
@@ -800,6 +840,7 @@ footer ul li a {
     footer {
         width: 100%;
     }
+
     footer a {
         padding: 10px 10px;
     }
@@ -809,4 +850,5 @@ footer ul li a {
         transition: 0.3s;
     }
 }
+
 /* DESKTOP VERSION END */
