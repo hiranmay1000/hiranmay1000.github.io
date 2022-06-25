@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Nunito:wght@300;400&family=Quicksand:wght@400;500&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Nunito+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');  
 
 * {
     text-decoration: none;
@@ -91,22 +94,28 @@ html {
 }
 
 header {
+    position: fixed;
     width: 100%;
     height: 80px;
     background-image: linear-gradient(to top right, #282828, #ffffff);
     display: flex;
     justify-content: space-between;
+    z-index: 4;
+    transition: 0.3s ease-out;
 }
 
 header #logo {
     text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 35px;
+    font-family: "nunito sans",sans-serif;
+    font-size: 32px;
     font-weight: 100px;
     text-align: left;
     line-height: 80px;
     transition: 0.3s ease-in;
-    left: 50px;
+}
+
+header #logo a {
+    color: #fff;
 }
 
 #login-container {
@@ -147,10 +156,6 @@ header #navbar {
     transition: 0.3s ease-in;
 }
 
-#logo a {
-    color: #fff;
-}
-
 /* menus */
 header nav ul li {
     display: inline-block;
@@ -158,8 +163,9 @@ header nav ul li {
 }
 
 header nav ul li a {
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-family: "lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
     color: #fff;
 }
 
@@ -170,13 +176,11 @@ header nav ul li a {
     margin: auto 0;
 }
 
-#see-all {
-    color: #e1ee12;
-}
 
 @media only screen and (max-width: 680px) {
     header {
         top: 0% !important;
+        background-image: linear-gradient(to top right, #2d2d2d, #bfbfbf) !important;
     }
 
     header nav ul {
@@ -186,7 +190,6 @@ header nav ul li a {
         flex-direction: column;
         align-items: center;
         position: center;
-        background-image: linear-gradient(to top right, #2d2d2d, #bfbfbf) !important;
         width: 100%;
         height: 100vh;
         padding: 40px 0 40px 0;
@@ -194,7 +197,7 @@ header nav ul li a {
         left: -1000%;
     }
 
-    header nav ul li a{
+    header nav ul li a {
         line-height: 80px;
     }
 
@@ -218,7 +221,7 @@ header nav ul li a {
         background-color: #b8b8b8;
         height: 3px;
         width: 25px;
-        margin-top: 6px;
+        margin: 3px;
         transition: 0.3s;
     }
 
@@ -256,13 +259,18 @@ main .index-banner {
     transition: 1s ease-in;
 }
 
+#index-banner {
+    /*do not merge with class index-banner*/
+    margin-top: 80px;
+}
+
 .vertical-center {
     display: table-cell;
     vertical-align: middle;
 }
 
-/* TITLE */
 .index-banner h2 {
+    /* I'm software engineer */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 42px;
     text-align: center;
@@ -272,8 +280,8 @@ main .index-banner {
     text-shadow: 3px 3px 15px #111;
 }
 
-/* title-2 */
 .index-banner p {
+    /* Below are the some projects */
     font-family: sans-serif;
     font-size: 18px;
     text-align: center;
@@ -284,9 +292,8 @@ main .index-banner {
     line-height: 22px;
 }
 
-/* title-3 */
-
 .title-3 {
+    /*Hello world*/
     font-family: sans-serif;
     color: #07031e;
     letter-spacing: 7px;
@@ -321,6 +328,11 @@ main .index-banner {
     transition: 0.3s ease-in;
     box-shadow: 2px 2px 5px #a8dadc;
 }
+
+#see-all {
+    color: #e1ee12;
+}
+
 /* MOBILE VERSION ................................... */
 
 /* PREVIEWS  */
@@ -349,7 +361,6 @@ main .index-banner {
     font-family: sans-serif;
     text-align: center;
     width: 300px;
-    margin: 0 auto;
 }
 
 .title-software {
@@ -411,17 +422,18 @@ main .index-banner {
 }
 
 #github-code-link {
+    margin: 0 auto;
     margin-top: 15px;
-    height: fit-content;
-    width: fit-content;
     background-color: #e9e9e9;
+    width: fit-content;
+    height: 40px;
 }
 
 #github-code-link a {
-    padding: 0 20px;
     display: block;
     color: #187498;
-    line-height: 60px;
+    line-height: 40px;
+    padding: 0 15px;
 }
 
 #github-code-link a:hover {
@@ -448,6 +460,16 @@ main .index-banner {
 .refresh-btn a {
     display: block;
     color: #fff;
+}
+
+.refresh-btn a:hover {
+    color: orange;
+    transition: 0.2s;
+}
+
+
+.refresh-btn:hover {
+    box-shadow: 2px 2px 5px #a8dadc;
 }
 
 /* FOOTER */
@@ -489,8 +511,116 @@ footer ul li a {
     width: 46px;
 }
 
-
 /* footer-end */
+
+/* ====================ABOUT-ME-PAGE-SECTION================== */
+.aboutme-link {
+    /*home-page*/
+    font-family: cursive;
+    margin: 0 auto;
+    margin-top: 15px;
+    box-shadow: 2px 2px 15px #111;
+    background-image: linear-gradient(to bottom right, #242424, #03071e);
+    width: fit-content;
+    height: 35px;
+}
+
+.aboutme-link a {
+    display: block;
+    color: #fff;
+    line-height: 35px;
+    padding: 0 20px;
+}
+
+.aboutme-link a:hover {
+    text-decoration: underline;
+    color: orange;
+    box-shadow: 3px 1px 18px #9d9d9d;
+    transition: 0.3s ease-in;
+}
+
+#aboutme-display-page {
+    margin-top: 80px;
+}
+
+.aboutme-firstpage-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100vh;
+}
+
+.square-box {
+    margin-top: 60px;
+    position: absolute;
+    left: 22%;
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(to bottom right, #828282, #03071e);
+    box-shadow: 3px 3px 13px #111;
+}
+
+.square-box h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6rem;
+    font-weight: 500;
+    color: #e1ee12;
+    text-align: center;
+    line-height: 200px;
+}
+
+.part1-info {
+    padding: 50px;
+    width: 70%;
+    height: 320px;
+    background-image: linear-gradient(to bottom left, #d1d1d1, #f6f6f6) !important;
+
+    /* background-color: #fff; */
+    margin: 0 20px;
+}
+
+.part1-info h3 {
+    font-family:"montserrat", Verdana, sans-serif;
+    font-size: 2rem;
+    color: #9a9a9a;
+    margin-top: 80px;
+    padding: 10px 0;
+}
+
+p {
+    font-family: "Nunito sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #111111;
+}
+
+.part1-info p a {
+    color: #187498;
+}
+
+.part1-info p a:hover {
+    color: orange;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.part2-img-container {
+    width: 30%;
+    height: 400px;
+    background-color: #07031e;
+    margin: 0 20px;
+    background-image: url(../Images/profile-img/profile-img1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.part2-img-container:hover {
+    background-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1)), url(../Images/profile-img/profile-img1.png);
+}
+
+/* ====================ABOUT-ME-PAGE-SECTION-END============== */
 
 /* TABLET VERSION */
 @media only screen and (min-width: 680px) {
@@ -504,7 +634,6 @@ footer ul li a {
     }
 
     nav ul {
-        padding-right: 30px;
         float: right;
         transition: 0.3s;
     }
@@ -565,12 +694,12 @@ footer ul li a {
 
 }
 
-/* TABLET VERSION END */
+/* ----------------------------END---------------------------- */
 
-/* DESKTOP VERSION */
+/* -----------------------DESKTOP VERSION------------------------ */
 @media only screen and (min-width: 1024px) {
-    /* HEADER DESKTOP */
 
+    /* HEADER DESKTOP */
     .contacts-banner {
         height: 25px;
         width: 100%;
@@ -595,11 +724,6 @@ footer ul li a {
     .contacts-details a:hover {
         color: orange;
         transition: 0.3s ease-in;
-    }
-
-    header #logo {
-        float: left;
-        line-height: 80px;
     }
 
     .search-box {
@@ -674,6 +798,20 @@ footer ul li a {
         background-image: linear-gradient(to top right, #3f3f3f, #ffffff);
     }
 
+    header #logo {
+        padding: 0 60px;
+    }
+
+    header .logo-container {
+        width: 280px;
+    }
+
+    header nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     header nav ul li {
         float: left;
     }
@@ -689,6 +827,10 @@ footer ul li a {
     header nav ul li a:hover {
         color: orange;
         transition: 0.2s;
+    }
+
+    #hamburger {
+        display: none;
     }
 
     /* MAIN */
@@ -825,11 +967,6 @@ footer ul li a {
 
     .refresh-btn a {
         font-size: 18px;
-    }
-
-    .refresh-btn a:hover {
-        color: orange;
-        transition: 0.2s;
     }
 
     /* previews section end */

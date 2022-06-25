@@ -17,7 +17,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 // ==============NAV-BAR-ONSCROLL===============
 function scrollFunction() {
-    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("navbar").style.position = "fixed";
         document.getElementById("navbar").style.zIndex = "4";
         document.getElementById("navbar").style.top = "0px";
@@ -38,17 +38,21 @@ function scrollFunction() {
         document.getElementById("logo").style.fontSize = "28px";
         document.getElementById("logo").style.lineHeight = "60px";
 
-        document.getElementById("index-banner").style.paddingTop = "80px";
-
-
         ["link1", "link2", "link3", "link4", "link5"].forEach(function (id) {
             document.getElementById(id).style.lineHeight = "60px";
             document.getElementById(id).style.fontSize = "14px";
         });
 
+        ["bar-resize1", "bar-resize2", "bar-resize3"].forEach(function (id) {
+            document.getElementById(id).style.width = "22px";
+            document.getElementById(id).style.margin = "2px";
+        });
+
+        document.getElementById("aboutme-display-page").style.top = "80px";
+
+
     } else {
 
-        document.getElementById("nav-menu").style.float = "left";
         document.getElementById("navbar").style.height = "80px";
         document.getElementById("navbar").style.top = "25px";
         document.getElementById("navbar").style.display = "flex";
@@ -61,13 +65,12 @@ function scrollFunction() {
         document.getElementById("login-btn").style.height = "38px";
 
         document.getElementById("nav-menu").style.height = "80px";
-        document.getElementById("nav-menu").style.float = "left";
         document.getElementById("nav-menu").style.justifyContent = "center";
         document.getElementById("nav-menu").style.alignItems = "center";
         document.getElementById("nav-menu").style.flexDirection = "coloumn";
 
         document.getElementById("logo").style.display = "block";
-        document.getElementById("logo").style.fontSize = "35px";
+        document.getElementById("logo").style.fontSize = "32px";
         document.getElementById("logo").style.lineHeight = "80px";
 
         ["link1", "link2", "link3", "link4", "link5"].forEach(function (id) {
@@ -75,6 +78,13 @@ function scrollFunction() {
             document.getElementById(id).style.lineHeight = "80px";
             document.getElementById(id).style.fontSize = "16px";
         });
+
+        ["bar-resize1", "bar-resize2", "bar-resize3"].forEach(function (id) {
+            document.getElementById(id).style.width = "25px";
+            document.getElementById(id).style.margin = "3px";
+        });
+
+        document.getElementById("aboutme-display-page").style.top = "80px";
 
     }
 }
