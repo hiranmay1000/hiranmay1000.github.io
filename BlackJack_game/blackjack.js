@@ -3,7 +3,7 @@ let sum = 0;
 let message = "";
 let isAlive = false;
 let hasBlackjack = false;
-const mesEl = document.getElementById("mes-el");
+let mesEl = document.getElementById("mes-el");
 const sumEl = document.getElementById("sum-el");
 const cardEl = document.getElementById("cards-el");
 const newGame = document.getElementById("start-game-btn");
@@ -38,10 +38,10 @@ function renderGame() {
     }
 
     sumEl.textContent = "Sum: " + sum;
-    if (sum <= 20) {
+    if (sum < 21) {
         message = "Do you want to draw a new card?";
         newGame.textContent = "NEW GAME";
-    } if (sum === 21) {
+    } if (sum == 21) {
         newGame.textContent = "START NEW GAME";
         hasBlackjack = true;
         message = "Yeh! you got blackjack";
@@ -54,7 +54,7 @@ function renderGame() {
 }
 
 function newCard() {
-    if (isAlive === true && hasBlackjack === false) {
+    if (isAlive == true && hasBlackjack == false) {
         let newCard = getRandomCard();
         cards.push(newCard);
         sum += newCard;
