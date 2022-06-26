@@ -3,7 +3,7 @@ const navMenu = document.querySelector("#nav-menu");
 window.onscroll = function () { scrollFunction() };
 
 
-// ===============HAMBURGER-ICON==============
+// ==============================HAMBURGER-ICON=================================
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
@@ -13,9 +13,9 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }));
-// ============HAMBURGER-ICON-END=============
+// ===========================HAMBURGER-ICON-END================================
 
-// ==============NAV-BAR-ONSCROLL===============
+// ============================NAV-BAR-ONSCROLL=================================
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("navbar").style.position = "fixed";
@@ -49,6 +49,8 @@ function scrollFunction() {
         });
 
         document.getElementById("aboutme-display-page").style.top = "80px";
+
+        widthSize();
 
 
     } else {
@@ -88,4 +90,4 @@ function scrollFunction() {
 
     }
 }
-// ==============NAV-BAR-ONSCROLL-END===============
+// ============================NAV-BAR-ONSCROLL-END=============================
