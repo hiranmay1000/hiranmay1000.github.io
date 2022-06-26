@@ -9,7 +9,11 @@
     </head>
     <body>
         <div class="interface">
-            <h2 id="new-player">Welcome: </h2>
+            <div class="score">
+                <h2 id="new-player">Welcome</h2>
+                <h2 id="wins"></h2>
+                <h2 id="losses"></h2>
+            </div>
             <h1>BLACKJACK GAME</h1>
             <h3 id="mes-el">want to play a round?</h3>
             <p id="cards-el">Cards:</p>
@@ -18,7 +22,7 @@
                 START GAME
             </button>
             <button id="suffle-btn" onclick="newCard()">GET A CARD</button>
-            <p id="game-rule"><a href="blackjack_rules.html">GAME RLUES</a></p>
+            <p><a href="blackjack_rules.html" id="game-rule">GAME RLUES</a></p>
         </div>
         <script src="blackjack.js"></script>
     </body>

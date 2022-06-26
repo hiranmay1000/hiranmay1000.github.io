@@ -8,6 +8,10 @@ const sumEl = document.getElementById("sum-el");
 const cardEl = document.getElementById("cards-el");
 const newGame = document.getElementById("start-game-btn");
 const getName = document.getElementById("new-player");
+let wins = document.getElementById("wins");
+let losses = document.getElementById("losses");
+let winsScore = 0;
+let lossesScore = 0;
 
 function startGame() {
     isAlive = true;
@@ -16,18 +20,15 @@ function startGame() {
     cards = [firstcard, secondcard];
     sum = firstcard + secondcard;
     newGame.textContent = "NEW GAME";
-    getName.textContent = "Player-1";
+    getName.textContent = "Player 1";
     renderGame();
 }
 
 function getRandomCard() {
     let randomcard = Math.floor(Math.random() * 13) + 1;
-    if (randomcard === 1) {
-        return 11;
-    } else if (randomcard > 10) {
-        return 10;
-    } else
-        return randomcard;
+    if (randomcard == 1) return 11;
+    if (randomcard > 10) return 10;
+    else return randomcard;
 }
 
 function renderGame() {
@@ -45,12 +46,16 @@ function renderGame() {
         newGame.textContent = "START NEW GAME";
         hasBlackjack = true;
         message = "Yeh! you got blackjack";
+        winsScore++
     } else if (sum > 21) {
         newGame.textContent = "START NEW GAME";
         isAlive = false;
         message = "You have lost";
+        lossesScore++
     }
     mesEl.textContent = message;
+    wins.textContent = `Wins: ${winsScore}`;
+    losses.textContent = `Losses: ${lossesScore}`;
 }
 
 function newCard() {

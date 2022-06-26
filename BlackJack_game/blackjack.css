@@ -62,7 +62,7 @@ p {
     color: antiquewhite;
 }
 
-h2 {
+.score {
     color: antiquewhite;
     text-align: center;
     position: relative;
@@ -73,11 +73,11 @@ h2 {
     background-image: url(../Images/blackjack.jpg);
 }
 
-#game-rule a {
+#game-rule {
     color: aqua;
 }
 
-#game-rule a:hover {
+#game-rule:hover {
     color: red;
 }
 .game-rule-manual {
