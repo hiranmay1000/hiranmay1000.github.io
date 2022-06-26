@@ -12,7 +12,7 @@
 body,
 html {
     scroll-behavior: smooth;
-    background-color: #d3d3d3;
+    background-color: #D8E0D5;
 }
 
 .up-down-btn {
@@ -83,7 +83,7 @@ html {
 .page4,
 .page5,
 .page6 {
-    background-image: linear-gradient(to bottom left, #fff, #bababa);
+    background-image: linear-gradient(to bottom left, #FBFDE3, #D8E0D5);
 }
 
 /* website transition end*/
@@ -101,7 +101,7 @@ header {
     justify-content: space-between;
     z-index: 4;
     transition: 0.3s ease-out;
-    background-color: #454545;
+    background-color: #f1faee;
     box-shadow: 0px 2px 10px #111;
 }
 
@@ -116,7 +116,7 @@ header #logo {
 }
 
 header #logo a {
-    color: #fff;
+    color: #868686;
 }
 
 #login-container {
@@ -135,7 +135,7 @@ header #logo a {
     border: none;
     color: #BED4D0;
     background-image: linear-gradient(to bottom right, #828282, #03071e);
-    box-shadow: 3px 3px 13px #111;
+    /* box-shadow: 3px 3px 13px #111; */
     transition: 0.3s ease-in;
 }
 
@@ -143,7 +143,6 @@ header #logo a {
     cursor: pointer;
     color: #e1ee12;
     transition: 0.2s;
-    box-shadow: 1px 1px 5px #111;
 }
 
 header #navbar {
@@ -165,9 +164,9 @@ header nav ul li {
 
 header nav ul li a {
     font-family: "lato", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
-    color: #fff;
+    color: #4e4e4e;
 }
 
 #hamburger {
@@ -179,7 +178,7 @@ header nav ul li a {
 
 
 #nav-menu a:hover {
-    color: #ffd8a2;
+    color: #29668C;
     transition: 0.3s ease-in;
 }
 
@@ -323,7 +322,6 @@ main .index-banner {
     display: block;
     text-align: center;
     line-height: 120px;
-    box-shadow: 5px 5px 13px #111;
     background-image: linear-gradient(to bottom right, #242424, #03071e);
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -509,6 +507,18 @@ footer a:hover {
     transition: 0.3s;
 }
 
+.footer-start-banner{
+    width: 100%;
+    height: 45px;
+    background-color: #BED4D0;
+}
+
+.footer-end-banner{
+    width: 100%;
+    height: 80px;
+    background-color: #003e65;
+}
+
 /* social-media */
 
 .social-media ul {
@@ -564,15 +574,17 @@ footer a:hover {
     margin: 0 auto;
     height: 100vh;
     width: 1000px;
+    position: relative;
+    padding-top: 50px;
 }
 
 .square-box {
-    position: absolute;
     height: 150px;
     width: 150px;
     background-image: linear-gradient(to bottom right, #828282, #03071e);
     box-shadow: 3px 3px 13px #111;
-    margin: 30px 70px;
+    position: absolute;
+    margin: -580px 0 0 70px;
 }
 
 .square-box h1 {
@@ -588,7 +600,7 @@ footer a:hover {
 .part1-info {
     padding: 50px;
     width: 70%;
-    background-image: linear-gradient(to bottom left, #dbdbdb, #f6f6f6) !important;
+    background-image: linear-gradient(to bottom left, #ccd3c9, #FBFDE3) !important;
     /* background-color: #fff; */
     margin: 0 20px;
 }
@@ -631,10 +643,11 @@ footer a:hover {
 }
 
 .part2-img-container img {
-    width: 400px;
+    width: 320px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 1.5s;
 }
 
 .part2-img-container img:hover {
@@ -787,7 +800,6 @@ footer a:hover {
     header nav ul li a {
         display: block;
         padding: 0 14px;
-        color: #ffffff;
         line-height: 80px;
         transition: 0.3s ease-in;
     }
@@ -881,7 +893,6 @@ footer a:hover {
         width: 85px;
         border: none;
         background-image: linear-gradient(to bottom right, #828282, #03071e);
-        box-shadow: 3px 3px 13px #111;
         transition: 0.3s ease-in;
     }
 
