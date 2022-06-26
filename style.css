@@ -15,6 +15,14 @@ html {
     background-color: #D8E0D5;
 }
 
+.paragraph-message{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.para-color{
+    color: #4e4e4e;
+}
+
 .up-down-btn {
     height: 100px;
     width: 40px;
@@ -101,7 +109,7 @@ header {
     justify-content: space-between;
     z-index: 4;
     transition: 0.3s ease-out;
-    background-color: #f1faee;
+    background-color: rgb(241, 250, 238, 0.9);
     box-shadow: 0px 2px 10px #111;
 }
 
@@ -507,13 +515,15 @@ footer a:hover {
     transition: 0.3s;
 }
 
-.footer-start-banner{
+.footer-start-banner {
     width: 100%;
     height: 45px;
     background-color: #BED4D0;
+    text-align: center;
+    line-height: 45px;
 }
 
-.footer-end-banner{
+.footer-end-banner {
     width: 100%;
     height: 80px;
     background-color: #003e65;
@@ -613,7 +623,7 @@ footer a:hover {
     padding: 10px 0;
 }
 
-.part1-info .para {
+.para {
     font-family: "nunito", arial;
     word-spacing: 0.5rem;
     line-height: 1.8rem;
@@ -752,9 +762,9 @@ footer a:hover {
     .contacts-banner {
         height: 25px;
         width: 100%;
-        background-color: grey;
         display: block;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: grey;
         color: #d3d3d3;
     }
 
