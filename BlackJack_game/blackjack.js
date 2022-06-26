@@ -16,7 +16,6 @@ function startGame() {
     cards = [firstcard, secondcard];
     sum = firstcard + secondcard;
     newGame.textContent = "NEW GAME";
-    getName.textContent = "Player-1";
     renderGame();
 }
 
@@ -33,22 +32,32 @@ function getRandomCard() {
 function renderGame() {
 
     cardEl.textContent = "Cards: ";
-    for (let i = 0; i < cards.length; i++) {
-        cardEl.textContent += cards[i] + " ";
+    for (let i = 0; i < cards.length; ++i) {
+        cardEl.textContent += cards[i] + " + ";
     }
 
-    sumEl.textContent = "Sum: " + sum;
+    sumEl.textContent = "TOTAL SCORE: " + sum;
     if (sum <= 20) {
+        isAlive = true;
         message = "Do you want to draw a new card?";
-        newGame.textContent = "NEW GAME";
-    } if (sum === 21) {
-        newGame.textContent = "START NEW GAME";
+        newGame.textContent = "NEW fdfv GAME";
+        newGame.style.display = "none";
+        getCard.style.display = "block";
+
+    } else if (sum === 21) {
+        isAlive = false;
         hasBlackjack = true;
         message = "Yeh! you got blackjack";
+        newGame.style.display = "block";
+        getCard.style.display = "none";
+
     } else if (sum > 21) {
-        newGame.textContent = "START NEW GAME";
         isAlive = false;
+        hasBlackjack = false;
         message = "You have lost";
+        newGame.style.display = "block";
+        getCard.style.display = "none";
+
     }
     mesEl.textContent = message;
 }
@@ -59,6 +68,6 @@ function newCard() {
         cards.push(newCard);
         sum += newCard;
         newGame.textContent = "START NEW GAME";
-        renderGame()
+        renderGame();
     }
 }
