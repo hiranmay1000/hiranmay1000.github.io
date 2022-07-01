@@ -112,7 +112,7 @@ header {
     z-index: 4;
     transition: 0.3s ease-out;
     background-color: rgba(232, 244, 253, 0.8);
-    box-shadow: 0px 2px 10px #111;
+    box-shadow: 0px 0px 8px #111;
 }
 
 header #logo {
@@ -188,7 +188,7 @@ header nav ul li a {
 
 
 #nav-menu a:hover {
-    color: #29668C;
+    color: #adadad;
     transition: 0.3s ease-in;
 }
 
@@ -198,15 +198,16 @@ header nav ul li a {
         top: 0% !important;
     }
 
-    header nav ul{
-        background-color: #187498 !important;
-        z-index: 7;
+    header nav ul {
         background-image: linear-gradient(to bottom left, #e9ebed, #f5f5f5);
+    }
+
+    .contacts-banner {
+        display: none;
     }
 
     header nav ul {
         position: fixed;
-        top: 80px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -216,13 +217,15 @@ header nav ul li a {
         padding: 40px 0 40px 0;
         transition: 0.3s ease-in;
         left: -1000%;
+        margin-top: 80px;
     }
 
     header nav ul li a {
+        display: block;
         line-height: 80px;
     }
 
-    .nav-link{
+    .nav-link {
         font-size: 16px !important;
         line-height: 80px !important;
     }
@@ -237,9 +240,11 @@ header nav ul li a {
     }
 
     .hamburger {
-        padding: 0 20px;
+        display: block;
+        padding: 20px;
         cursor: pointer;
         overflow: hidden;
+        scroll-behavior: none;
     }
 
     .bars {
@@ -528,6 +533,14 @@ footer a:hover {
     transition: 0.3s;
 }
 
+footer #copyright {
+    width: 50%;
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    padding-top: 30px;
+}
+
 .footer-start-banner {
     width: 100%;
     height: 45px;
@@ -554,7 +567,7 @@ footer a:hover {
 }
 
 .social-media img {
-    width: 46px;
+    width: 38px;
 }
 
 /* footer-end */
@@ -623,9 +636,8 @@ footer a:hover {
 .part1-info {
     padding: 50px;
     width: 70%;
-    background-image: linear-gradient(to bottom left, #e5f1ff, #fff) !important;
+    background-image: linear-gradient(to bottom left, #d9e3f2, #fffcfc) !important;
     /* background-color: #fff; */
-    margin: 0 20px;
 }
 
 .part1-info h3 {
@@ -663,7 +675,6 @@ footer a:hover {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-radius: 0.5rem;
 }
 
 .part2-img-container img {
@@ -694,7 +705,7 @@ footer a:hover {
 }
 
 .aboutme-pages {
-    background-image: linear-gradient(to top right, #f0f8ff, #f5f5f5);
+    background-image: linear-gradient(to top right, #eaf5ff, #f5f5f5);
 
     /* background-image: linear-gradient(to bottom left, #f1f0ff, #f5f5f5); */
 
@@ -705,6 +716,9 @@ footer a:hover {
 /* TABLET VERSION */
 @media only screen and (min-width: 680px) {
 
+    header {
+        top: 0px;
+    }
 
     #logo {
         float: left;
@@ -766,6 +780,8 @@ footer a:hover {
     .all-elements .element-rec {
         width: 200px;
     }
+
+
 
 
 }
@@ -926,7 +942,7 @@ footer a:hover {
 
     main .index-banner {
         height: 550px;
-        background-image: url(./Images/dark_laptop.jpg);
+        background-image: url(./Images/vector3.jpg);
     }
 
     .index-banner h2 {

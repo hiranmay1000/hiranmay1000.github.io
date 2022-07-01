@@ -18,16 +18,35 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 
 // // ============================NAV-BAR-HIDE-ONSCROLL============================
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function () {
-//     var currentScrollPos = window.pageYOffset;
-//     if (prevScrollpos > currentScrollPos) {
+
+// function scrollFunction() {
+//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 //         document.getElementById("navbar").style.top = "0px";
+//         var prevScrollpos = window.pageYOffset;
+//         window.onscroll = function () {
+//             var currentScrollPos = window.pageYOffset;
+//             if (prevScrollpos > currentScrollPos) {
+//                 document.getElementById("navbar").style.top = "25px";
+//             } else {
+//                 document.getElementById("navbar").style.top = "-80px";
+//             }
+//             prevScrollpos = currentScrollPos;
+//         }
 //     } else {
-//         document.getElementById("navbar").style.top = "-80px";
+//         document.getElementById("navbar").style.top = "0px";
+//         var prevScrollpos = window.pageYOffset;
+//         window.onscroll = function () {
+//             var currentScrollPos = window.pageYOffset;
+//             if (prevScrollpos > currentScrollPos) {
+//                 document.getElementById("navbar").style.top = "25px";
+//             } else {
+//                 document.getElementById("navbar").style.top = "-75px";
+//             }
+//             prevScrollpos = currentScrollPos;
+//         }
 //     }
-//     prevScrollpos = currentScrollPos;
 // }
+
 // // =========================NAV-BAR-HIDE-ONSCROLL-END===========================
 
 
@@ -103,4 +122,4 @@ function scrollFunction() {
 
     }
 }
-// ============================NAV-BAR-ONSCROLL-END=============================
+// ============================NAV-BAR-ONSCROLL-END=============================*/
