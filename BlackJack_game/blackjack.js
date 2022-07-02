@@ -3,11 +3,12 @@ let sum = 0;
 let message = "";
 let isAlive = false;
 let hasBlackjack = false;
-const mesEl = document.getElementById("mes-el");
-const sumEl = document.getElementById("sum-el");
-const cardEl = document.getElementById("cards-el");
-const newGame = document.getElementById("start-game-btn");
-const getName = document.getElementById("new-player");
+let mesEl = document.getElementById("mes-el");
+let sumEl = document.getElementById("sum-el");
+let cardEl = document.getElementById("cards-el");
+let newGame = document.getElementById("startGameBtn");
+let getName = document.getElementById("new-player");
+let getCard = document.getElementById("get-card-btn");
 
 function startGame() {
     isAlive = true;
