@@ -138,6 +138,7 @@ header #logo a {
 }
 
 #login-btn {
+    font-size: 12px;
     float: right;
     font-family: "Poppins", sans-serif;
     height: 40px;
@@ -145,7 +146,7 @@ header #logo a {
     border: none;
     color: #BED4D0;
     background-image: linear-gradient(to bottom right, #828282, #03071e);
-    /* box-shadow: 3px 3px 13px #111; */
+    box-shadow: 2px 2px 3px #111;
     transition: 0.3s ease-in;
 }
 
@@ -348,7 +349,7 @@ main .index-banner {
     display: block;
     text-align: center;
     line-height: 120px;
-    background-image: linear-gradient(to bottom right, #242424, #03071e);
+    background-image: linear-gradient(to bottom right, #242424, #000310);
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -358,11 +359,6 @@ main .index-banner {
     transition: 0.3s ease-in;
     box-shadow: 2px 2px 5px #a8dadc;
 }
-
-#see-all {
-    color: #e1ee12;
-}
-
 /* MOBILE VERSION ................................... */
 
 /* PREVIEWS  */
@@ -933,7 +929,7 @@ footer #copyright {
         float: right;
         font-family: "Poppins", sans-serif;
         height: 38px;
-        width: 85px;
+        width: 100px;
         border: none;
         background-image: linear-gradient(to bottom right, #828282, #03071e);
         transition: 0.3s ease-in;

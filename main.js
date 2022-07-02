@@ -67,10 +67,11 @@ function scrollFunction() {
         // document.getElementById("login-container").style.justifyContent = "center";
         document.getElementById("login-container").style.height = "45px";
 
-        document.getElementById("login-btn").style.width = "70px";
+        document.getElementById("login-btn").style.width = "75px";
         document.getElementById("login-btn").style.height = "25px";
+        document.getElementById("login-btn").style.fontSize = "8px";
 
-        // document.getElementById("nav-menu").style.height = "45px";
+        document.getElementById("nav-menu").style.marginTop = "23px";
 
         document.getElementById("logo").style.fontSize = "22px";
         document.getElementById("logo").style.lineHeight = "45px";
@@ -97,13 +98,16 @@ function scrollFunction() {
 
         // document.getElementById("login-container").style.display = "flex";
         // document.getElementById("login-container").style.width = "280px";
-        document.getElementById("login-btn").style.width = "85px";
+        document.getElementById("login-btn").style.width = "100px";
         document.getElementById("login-btn").style.height = "38px";
+        document.getElementById("login-btn").style.fontSize = "12px";
 
         // document.getElementById("nav-menu").style.height = "80px";
         // document.getElementById("nav-menu").style.justifyContent = "center";
         // document.getElementById("nav-menu").style.alignItems = "center";
         // document.getElementById("nav-menu").style.flexDirection = "coloumn";
+        document.getElementById("nav-menu").style.marginTop = "40px";
+
 
         document.getElementById("logo").style.fontSize = "32px";
         document.getElementById("logo").style.lineHeight = "80px";
