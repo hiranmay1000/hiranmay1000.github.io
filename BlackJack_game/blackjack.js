@@ -22,12 +22,9 @@ function startGame() {
 
 function getRandomCard() {
     let randomcard = Math.floor(Math.random() * 13) + 1;
-    if (randomcard === 1) {
-        return 11;
-    } else if (randomcard > 10) {
-        return 10;
-    } else
-        return randomcard;
+    if (randomcard === 1) return 11;
+    else if (randomcard > 10) return 10;
+    else return randomcard;
 }
 
 function renderGame() {
@@ -64,7 +61,7 @@ function renderGame() {
 }
 
 function newCard() {
-    if (isAlive === true && hasBlackjack === false) {
+    if (isAlive === true || hasBlackjack === false) {
         let newCard = getRandomCard();
         cards.push(newCard);
         sum += newCard;
