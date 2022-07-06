@@ -2,6 +2,6 @@
 
 Visit -> https://hiranmay1000.github.io
 
-# version -> 2.9100
+# version -> 2.9110
 
 # FUTURE UPDATES
