@@ -2,6 +2,4 @@
 
 Visit -> https://hiranmay1000.github.io
 
-# version -> 3.0
-
-# FUTURE UPDATES
+# version -> 3.1

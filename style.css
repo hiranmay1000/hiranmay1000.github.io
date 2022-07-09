@@ -19,6 +19,7 @@ html {
 
 .paragraph-message {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(205, 202, 202, 0.67);
 }
 
 .para-color {
@@ -193,6 +194,32 @@ header nav ul li a {
     transition: 0.3s ease-in;
 }
 
+.back-to-top-btn {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(205, 202, 202, 0.67);
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top-left-radius: 40px;
+    border-top-right-radius: 40px; */
+    border-start-start-radius: 40px;
+}
+
+.b-t-t-btn-container {
+    background-image: url(/Images/Logoes/arrow1.png);
+    background-position: center;
+    background-size: cover;
+    height: 12px;
+    width: 12px;
+    transform: rotate(-90deg);
+    margin-right: -5px;
+    margin-bottom: -5px;
+}
 
 @media only screen and (max-width: 680px) {
     header {
@@ -470,38 +497,6 @@ main .index-banner {
     color: #ffd8a2;
 }
 
-/* MY INFO END */
-
-.refresh-btn {
-    font-size: 14px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #03071e;
-    text-align: center;
-    line-height: 40px;
-    margin: 0 auto;
-    width: 120px;
-    height: 40px;
-    margin-top: 35px;
-    box-shadow: 5px 5px 13px #111;
-    background-image: linear-gradient(to bottom right, #828282, #03071e);
-}
-
-.refresh-btn a {
-    display: block;
-    color: #fff;
-}
-
-.refresh-btn a:hover {
-    color: #ffd8a2;
-    transition: 0.2s;
-}
-
-
-.refresh-btn:hover {
-    box-shadow: 2px 2px 5px #a8dadc;
-}
-
-
 /* FOOTER */
 
 footer {
@@ -573,30 +568,6 @@ footer #copyright {
 /* footer-end */
 
 /* ====================ABOUT-ME-PAGE-SECTION================== */
-.aboutme-link {
-    /*home-page*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0 auto;
-    margin-top: 15px;
-    box-shadow: 2px 2px 15px #111;
-    background-image: linear-gradient(to bottom right, #242424, #03071e);
-    width: fit-content;
-    height: 35px;
-}
-
-.aboutme-link a {
-    display: block;
-    color: #fff;
-    line-height: 35px;
-    padding: 0 20px;
-}
-
-.aboutme-link a:hover {
-    text-decoration: underline;
-    color: #ffd8a2;
-    box-shadow: 3px 1px 18px #9d9d9d;
-    transition: 0.3s ease-in;
-}
 
 #aboutme-display-page {
     margin: 0 auto;
@@ -887,19 +858,6 @@ footer #copyright {
         width: 200px;
     }
 
-    .aboutme-link {
-        height: 60px;
-    }
-
-    .aboutme-link a {
-        font-size: 22px;
-        width: 150px;
-        height: 60px;
-        text-align: center;
-        line-height: 60px;
-    }
-
-
 
 
 }
@@ -1057,6 +1015,18 @@ footer #copyright {
         transition: 0.3s ease-in;
     }
 
+    .back-to-top-btn {
+        width: 150px;
+        height: 40px;
+        right: 10%;
+        border-start-end-radius: 35px;
+    }
+
+    .b-t-t-btn-container {
+        height: 15px;
+        width: 15px;
+    }
+
 
     main .index-banner {
         height: 550px;
@@ -1156,17 +1126,6 @@ footer #copyright {
         width: 100%;
     }
 
-    .refresh-btn {
-        width: 180px;
-        height: 45px;
-        line-height: 45px;
-        margin-top: 50px;
-    }
-
-    .refresh-btn a {
-        font-size: 18px;
-    }
-
     /* previews section end */
 
     /* ------------------aboutme-page------------------ */
@@ -1177,31 +1136,6 @@ footer #copyright {
     #aboutme-display-page {
         margin: 0 auto;
         width: 1000px;
-    }
-
-    .aboutme-link {
-        /*home-page*/
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0 auto;
-        margin-top: 15px;
-        box-shadow: 2px 2px 15px #111;
-        background-image: linear-gradient(to bottom right, #242424, #03071e);
-        width: fit-content;
-        height: 35px;
-    }
-
-    .aboutme-link a {
-        display: block;
-        color: #fff;
-        line-height: 35px;
-        padding: 0 20px;
-    }
-
-    .aboutme-link a:hover {
-        text-decoration: underline;
-        color: #ffd8a2;
-        box-shadow: 3px 1px 18px #9d9d9d;
-        transition: 0.3s ease-in;
     }
 
     #aboutme-display-page {
