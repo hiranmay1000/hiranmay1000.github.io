@@ -501,7 +501,7 @@ main .index-banner {
 
 footer {
     overflow: hidden;
-    height: 550px;
+    height: 350px;
     background-color: #29668C;
 }
 
@@ -873,7 +873,7 @@ footer #copyright {
         width: 100%;
         display: block;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: #414141;
+        background-color: #19567e;
         color: #d3d3d3;
     }
 
@@ -881,7 +881,8 @@ footer #copyright {
         font-size: 12px;
         list-style: none;
         float: right;
-        padding: 3px 12px;
+        line-height: 25px;
+        padding: 0 10px;
     }
 
     .contacts-details a {
@@ -892,10 +893,6 @@ footer #copyright {
         color: #ffd8a2;
         transition: 0.3s ease-in;
         text-decoration: underline;
-    }
-
-    header {
-        top: 25px;
     }
 
     header #logo {
@@ -1104,6 +1101,14 @@ footer #copyright {
         font-family: sans-serif;
         color: #a8dadc;
         font-size: 58px;
+    }
+
+    /* github-section */
+    .github-side-panel{
+        height: 100vh;
+        width: 15%;
+        background-color: #000000;
+        position: absolute;
     }
 
     /* previews section */

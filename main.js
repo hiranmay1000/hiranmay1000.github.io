@@ -83,7 +83,6 @@ function scrollFunction() {
     } else {
 
         document.getElementById("navbar").style.height = "80px";
-        document.getElementById("navbar").style.top = "25px";
         document.getElementById("navbar").style.alignItems = "center";
 
         document.getElementById("login-btn").style.width = "100px";
