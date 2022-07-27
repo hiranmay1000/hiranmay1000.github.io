@@ -3,6 +3,14 @@ const navMenu = document.querySelector("#nav-menu");
 window.onscroll = function () { scrollFunction() };
 
 
+// ============================PRE-LOADER=============================*/
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function () {
+    loader.style.display = "none";
+})
+// ============================PRE-LOADER-END=============================*/
+
 // ==============================HAMBURGER-ICON=================================
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -12,7 +20,7 @@ hamburger.addEventListener("click", () => {
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-}));a
+})); a
 // ===========================HAMBURGER-ICON-END================================
 
 
@@ -58,6 +66,9 @@ function scrollFunction() {
         document.getElementById("navbar").style.zIndex = "4";
         document.getElementById("navbar").style.top = "0%";
         document.getElementById("navbar").style.height = "45px";
+        document.getElementById("navbar").style.boxShadow=" 0px 0px 40px #2b2b2b";
+        // box-shadow: 0px 0px 8px #111;
+
 
         document.getElementById("login-container").style.height = "45px";
 
@@ -84,6 +95,8 @@ function scrollFunction() {
 
         document.getElementById("navbar").style.height = "80px";
         document.getElementById("navbar").style.alignItems = "center";
+        document.getElementById("navbar").style.boxShadow="none";
+
 
         document.getElementById("login-btn").style.width = "100px";
         document.getElementById("login-btn").style.height = "38px";
@@ -109,3 +122,5 @@ function scrollFunction() {
     }
 }
 // ============================NAV-BAR-ONSCROLL-END=============================*/
+
+

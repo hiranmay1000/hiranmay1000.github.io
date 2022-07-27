@@ -17,6 +17,22 @@ html {
     /* background-color: #f5f5ff; */
 }
 
+#preloader {
+    background: rgb(10, 10, 10);
+    /* background: #000000; */
+    height: 100vh;
+    width: 100%;
+    margin-top: -80px;
+    padding-bottom: 80px;
+    position: fixed;
+    z-index: 100;
+    /* background-image: url(/Images/Logoes/hiran-logo.gif) ; */
+    background-image: url(/Images/Logoes/micro-motion.gif);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .paragraph-message {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(205, 202, 202, 0.67);
@@ -112,9 +128,10 @@ header {
     justify-content: space-between;
     z-index: 4;
     transition: 0.3s ease-out;
-    background-color: rgba(232, 244, 253, 0.8);
-    box-shadow: 0px 0px 8px #111;
+    /* background-color: rgba(232, 244, 253, 0.8); */
+    background: rgb(233, 235, 237, 0.8);
     backdrop-filter: blur(12px);
+    color: #2b2b2b;
 }
 
 header #logo {
@@ -209,6 +226,7 @@ header nav ul li a {
     /* border-top-left-radius: 40px;
     border-top-right-radius: 40px; */
     border-start-start-radius: 40px;
+    backdrop-filter: blur(5px);
 }
 
 .b-t-t-btn-container {
@@ -835,6 +853,7 @@ footer #copyright {
 
     .element-container {
         backdrop-filter: blur(12px);
+        border-radius: 20px;
     }
 
     .all-elements a {
@@ -1014,12 +1033,17 @@ footer #copyright {
         width: 150px;
         height: 40px;
         right: 10%;
-        border-start-end-radius: 35px;
+        border-start-start-radius: 25px;
+        border-start-end-radius: 25px;
     }
 
     .b-t-t-btn-container {
         height: 15px;
         width: 15px;
+    }
+
+    #index-banner {
+        margin-top: 100px;
     }
 
 
@@ -1075,7 +1099,7 @@ footer #copyright {
     main .index-banner-2 {
         width: 100%;
         height: 100vh;
-        background-image: url(./Images/porche.jpg);
+        background-image: url(./Images/gamepad.png);
         background-repeat: no-repeat;
         background-size: cover;
         display: table;
