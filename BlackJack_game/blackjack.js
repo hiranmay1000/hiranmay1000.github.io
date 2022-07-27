@@ -3,12 +3,12 @@ let sum = 0;
 let message = "";
 let isAlive = false;
 let hasBlackjack = false;
-let mesEl = document.getElementById("mes-el");
-let sumEl = document.getElementById("sum-el");
-let cardEl = document.getElementById("cards-el");
-let newGame = document.getElementById("startGameBtn");
-let getName = document.getElementById("new-player");
-let getCard = document.getElementById("get-card-btn");
+const mesEl = document.getElementById("mes-el");
+const sumEl = document.getElementById("sum-el");
+const cardEl = document.getElementById("cards-el");
+const newGame = document.getElementById("startGameBtn");
+const getName = document.getElementById("new-player");
+const getCard = document.getElementById("get-card-btn");
 
 function startGame() {
     isAlive = true;
@@ -22,12 +22,9 @@ function startGame() {
 
 function getRandomCard() {
     let randomcard = Math.floor(Math.random() * 13) + 1;
-    if (randomcard === 1) {
-        return 11;
-    } else if (randomcard > 10) {
-        return 10;
-    } else
-        return randomcard;
+    if (randomcard === 1) return 11;
+    else if (randomcard > 10) return 10;
+    else return randomcard;
 }
 
 function renderGame() {
@@ -64,7 +61,7 @@ function renderGame() {
 }
 
 function newCard() {
-    if (isAlive === true && hasBlackjack === false) {
+    if (isAlive === true || hasBlackjack === false) {
         let newCard = getRandomCard();
         cards.push(newCard);
         sum += newCard;
