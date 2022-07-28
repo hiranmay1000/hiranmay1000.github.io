@@ -17,7 +17,7 @@ html {
     /* background-color: #f5f5ff; */
 }
 
-#top-of-page{
+#top-of-page {
     background-color: #e9ebed;
     height: 80px;
     width: 100%;
@@ -39,7 +39,7 @@ html {
     background-position: center;
 }
 
-.progression-cont{
+.progression-cont {
     width: 100%;
     height: 5px;
     background-color: #61616161;
@@ -47,13 +47,13 @@ html {
     top: 45px;
 }
 
-.progression-bar{
+.progression-bar {
     background-color: #e63946;
     width: 0%;
     height: 5px;
 }
 
-.second-nav-cont{
+.second-nav-cont {
     display: none;
 }
 
@@ -416,23 +416,23 @@ main .index-banner {
     text-align: center;
     line-height: 120px;
     background-image: linear-gradient(to bottom right, #242424, #000310);
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .all-elements a:hover {
-    color: #e63946;
+    color: #34b1c7;
     transition: 0.3s ease-in;
     box-shadow: 0px 0px 14px rgba(31, 103, 212, 0.295);
 }
 
-#see-all{
+#see-all {
     font-style: italic;
-    color: #3ebaeb;
+    color: #00a7e9;
 }
 
-#see-all:hover{
-    color: #df9d0f;
+#see-all:hover {
+    color: #0fdf9a;
 }
 
 /* MOBILE VERSION ................................... */
@@ -1066,10 +1066,10 @@ footer #copyright {
         border-start-end-radius: 25px;
     }
 
-    .second-nav-cont{
+    .second-nav-cont {
         display: flex;
         height: 50px;
-        width: 40%;
+        width: calc(40%);
         background-color: rgb(10, 10, 10, 0.7);
         backdrop-filter: blur(12px);
         top: 45px;
@@ -1077,25 +1077,29 @@ footer #copyright {
         right: 0;
         z-index: 38;
         justify-content: space-between;
-        justify-content:end;
-        border-end-start-radius: 90px;
+        justify-content: end;
     }
-    
+
     .second-nav-cont .second-nav ul li {
         font-family: "lato";
         list-style: none;
         font-size: 12px;
         display: inline-block;
     }
-    .second-nav-cont .second-nav ul li a{
+
+    .second-nav-cont .second-nav ul li a {
         line-height: 50px;
         color: #fff;
         padding: 0 20px;
         display: block;
     }
 
-    .second-nav-cont .second-nav ul li a:hover{
+    .second-nav-cont .second-nav ul li a:hover {
         color: #a8a8a8;
+    }
+
+    .second-nav-cont {
+        display: none;
     }
 
     .b-t-t-btn-container {
@@ -1129,14 +1133,18 @@ footer #copyright {
         width: 1000px;
     }
 
+    .all-elements a{
+        background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(148, 148, 148, 0.9));
+    }
+    
     .element-container {
         backdrop-filter: blur(12px);
     }
-
+    
     .all-elements .element-sq {
         width: 220px;
     }
-
+    
     .all-elements .element-rec {
         width: 440px;
     }
