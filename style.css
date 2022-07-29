@@ -238,9 +238,9 @@ header nav ul li a {
 }
 
 .back-to-top-btn {
-    height: 50px;
-    width: 50px;
-    background-color: rgba(205, 202, 202, 0.67);
+    height: 70px;
+    width: 70px;
+    /* background-color: rgba(205, 202, 202, 0.67); */
     position: fixed;
     bottom: 0%;
     right: 0%;
@@ -248,10 +248,8 @@ header nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border-top-left-radius: 40px;
-    border-top-right-radius: 40px; */
-    border-start-start-radius: 40px;
-    backdrop-filter: blur(15px);
+    border-start-start-radius: 180px;
+    background-image: linear-gradient(135deg, transparent 50px, rgba(211, 211, 211, 0.8) 0);
 }
 
 .b-t-t-btn-container {
@@ -261,8 +259,8 @@ header nav ul li a {
     height: 12px;
     width: 12px;
     transform: rotate(-90deg);
-    margin-right: -5px;
-    margin-bottom: -5px;
+    margin-right: -25px;
+    margin-bottom: -25px;
 }
 
 @media only screen and (max-width: 680px) {
@@ -1059,29 +1057,34 @@ footer #copyright {
     }
 
     .back-to-top-btn {
+        height: 45px;
         width: 150px;
-        height: 40px;
-        right: 10%;
-        border-start-start-radius: 25px;
-        border-start-end-radius: 25px;
+    }
+
+    .b-t-t-btn-container {
+        margin-right: -55px;
+        margin-bottom: -5px;
     }
 
     .second-nav-cont {
         display: flex;
         height: 50px;
-        width: calc(40%);
-        background-color: rgb(10, 10, 10, 0.7);
-        backdrop-filter: blur(12px);
+        /* background-color: rgb(10, 10, 10, 0.7); */
         top: 45px;
         position: fixed;
         right: 0;
         z-index: 38;
         justify-content: space-between;
         justify-content: end;
+        background-image: linear-gradient(45deg, transparent 45px, rgba(46, 42, 42, 0.9) 0);
+    }
+
+    .second-nav-cont .second-nav ul {
+        padding-left: 120px;
     }
 
     .second-nav-cont .second-nav ul li {
-        font-family: "lato";
+        font-family: "lato", sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         list-style: none;
         font-size: 12px;
         display: inline-block;
@@ -1133,18 +1136,18 @@ footer #copyright {
         width: 1000px;
     }
 
-    .all-elements a{
+    .all-elements a {
         background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(148, 148, 148, 0.9));
     }
-    
+
     .element-container {
         backdrop-filter: blur(12px);
     }
-    
+
     .all-elements .element-sq {
         width: 220px;
     }
-    
+
     .all-elements .element-rec {
         width: 440px;
     }

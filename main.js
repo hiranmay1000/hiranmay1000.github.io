@@ -60,7 +60,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 // ============================NAV-BAR-ONSCROLL=================================
 function scrollFunction() {
-
+    
     // // .................ONSCROLL-PROGRESS-BAR...................
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -70,7 +70,7 @@ function scrollFunction() {
     // ..................ONSCROLL-PROGRESS-BAR-END..................
     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
         document.getElementById("prog-container").style.display = "block";
-
+        
         document.getElementById("second-navbar").style.display = "flex";
     }
     
@@ -81,7 +81,7 @@ function scrollFunction() {
         document.getElementById("navbar").style.height = "45px";
         document.getElementById("navbar").style.boxShadow = " 0px 0px 40px #2b2b2b";
         // box-shadow: 0px 0px 8px #111;
-
+        
         
         document.getElementById("login-container").style.height = "45px";
         
@@ -91,6 +91,8 @@ function scrollFunction() {
         
         document.getElementById("logo").style.fontSize = "22px";
         document.getElementById("logo").style.lineHeight = "45px";
+        
+        document.getElementById("back-to-top-switch").style.display = "block";
         
         ["link1", "link2", "link3", "link4", "link5"].forEach(function (id) {
             document.getElementById(id).style.lineHeight = "45px";
@@ -104,11 +106,15 @@ function scrollFunction() {
         
         document.getElementById("aboutme-display-page").style.top = "80px";
         
+        
     } else {
+        document.getElementById("back-to-top-switch").style.display = "none";
+
+
         document.getElementById("prog-container").style.display = "none";
 
         document.getElementById("second-navbar").style.display = "none";
-        
+
         document.getElementById("navbar").style.height = "80px";
         document.getElementById("navbar").style.alignItems = "center";
         document.getElementById("navbar").style.boxShadow = "none";
