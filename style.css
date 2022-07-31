@@ -414,12 +414,12 @@ main .index-banner {
     text-align: center;
     line-height: 120px;
     background-image: linear-gradient(to bottom right, #242424, #000310);
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .all-elements a:hover {
-    color: #34b1c7;
+    color: orange;
     transition: 0.3s ease-in;
     box-shadow: 0px 0px 14px rgba(31, 103, 212, 0.295);
 }
@@ -430,7 +430,7 @@ main .index-banner {
 }
 
 #see-all:hover {
-    color: #0fdf9a;
+    color: orange;
 }
 
 /* MOBILE VERSION ................................... */
@@ -1137,7 +1137,7 @@ footer #copyright {
     }
 
     .all-elements a {
-        background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(148, 148, 148, 0.9));
+        background-image: linear-gradient(to bottom right, rgba(63, 63, 63, 0.9), rgba(29, 29, 29, 0.9));
     }
 
     .element-container {
