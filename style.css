@@ -880,7 +880,8 @@ footer #copyright {
 
     .element-container {
         backdrop-filter: blur(12px);
-        border-radius: 20px;
+        border-radius: 5px;
+        background: rgb(233, 235, 237,0.5);
     }
 
     .all-elements a {
@@ -1076,20 +1077,20 @@ footer #copyright {
         z-index: 38;
         justify-content: space-between;
         justify-content: end;
-        background-image: linear-gradient(45deg, transparent 45px, rgba(46, 42, 42, 0.9) 0);
+        background-image: linear-gradient(45deg, transparent 45px, rgba(80, 80, 80, 0.9) 0);
     }
-
+    
     .second-nav-cont .second-nav ul {
         padding-left: 120px;
     }
-
+    
     .second-nav-cont .second-nav ul li {
         font-family: "lato", sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         list-style: none;
         font-size: 12px;
         display: inline-block;
     }
-
+    
     .second-nav-cont .second-nav ul li a {
         line-height: 50px;
         color: #fff;
@@ -1136,16 +1137,12 @@ footer #copyright {
         width: 1000px;
     }
 
-    .all-elements a {
-        background-image: linear-gradient(to bottom right, rgba(63, 63, 63, 0.9), rgba(29, 29, 29, 0.9));
-    }
-
     .element-container {
         backdrop-filter: blur(12px);
     }
 
     .all-elements .element-sq {
-        width: 220px;
+        width: 216px;
     }
 
     .all-elements .element-rec {
