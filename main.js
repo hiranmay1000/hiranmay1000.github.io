@@ -22,8 +22,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 })); a
 // .....................HAMBURGER-ICON-END.....................
 
-
-
 //.....................NAV-BAR-HIDE-ONSCROLL..................
 
 // function scrollFunction() {
