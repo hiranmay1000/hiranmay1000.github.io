@@ -43,16 +43,16 @@ html {
 
 .progression-cont {
     width: 100%;
-    height: 5px;
+    height: 8px;
     background-color: #61616161;
     position: fixed;
     top: 45px;
 }
 
 .progression-bar {
-    background-color: #e63946;
+    background-color: #e63947de;
     width: 0%;
-    height: 5px;
+    height: 8px;
 }
 
 .second-nav-cont {
@@ -332,7 +332,7 @@ header nav ul li a {
     }
 
     .hamburger.active .bars:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(9px) rotate(45deg);
     }
 
     .hamburger.active .bars:nth-child(2) {
@@ -340,7 +340,7 @@ header nav ul li a {
     }
 
     .hamburger.active .bars:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-9px) rotate(-45deg);
     }
 
     #nav-menu.active {
@@ -572,6 +572,7 @@ footer ul li {
 
 footer ul li a {
     line-height: 25px;
+    color: #fff;
 }
 
 footer a:hover {
