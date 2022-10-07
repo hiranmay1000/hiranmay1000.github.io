@@ -34,8 +34,7 @@
     <div id="top-of-page"></div>
     <a href="#top-of-page" id="back-to-top-switch">
         <div class="back-to-top-btn">
-            <div class="b-t-t-btn-container">
-            </div>
+            <div class="b-t-t-btn-container"></div>
         </div>
     </a>
     <!-- -----------------BACK-TOP-TOP-END----------------- -->
@@ -59,15 +58,17 @@
                         </div>
                     </div>
 
-                    <nav id="main-menu">
+                    <nav class="navbar" id="main-menu">
                         <ul id="nav-menu">
-                            <li id="nav-list-items"><a class="nav-link" id="link1" href="#section1">HOME</a></li>
-                            <li id="nav-list-items"><a class="nav-link" id="link4" href="#section2">PROJECTS</a></li>
-                            <li id="nav-list-items"><a class="nav-link" id="link5" href="./sub-pages/aboutme.html">ABOUT
-                                    ME</a></li>
-                            <li id="nav-list-items"><a class="nav-link" id="link3"
+                            <li id="nav-list-items" class="active"><a class="nav-link btn active" id="link1"
+                                    href="#section1">HOME</a></li>
+                            <li id="nav-list-items" class="menu-links "><a class="nav-link btn" id="link4"
+                                    href="#section2">PROJECTS</a></li>
+                            <li id="nav-list-items" class="menu-links "><a class="nav-link btn" id="link5"
+                                    href="#section4">ABOUT ME</a></li>
+                            <li id="nav-list-items" class="menu-links "><a class="nav-link btn" id="link3"
                                     href="https://hiranmay1000.github.io/seekerbays/">BLOG</a></li>
-                            <li id="nav-list-items"><a class="nav-link" id="link2"
+                            <li id="nav-list-items" class="menu-links "><a class="nav-link btn  " id="link2"
                                     href="https://www.canva.com/design/DAFH2qEmzZQ/GmlQdfQODweu4PW86PImbw/view?utm_content=DAFH2qEmzZQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">RESUME</a>
                             </li>
                         </ul>
@@ -182,7 +183,9 @@
                             section and also check out my latest
                             <a href="blogs">blogs</a>.
                         </p>
-                        <p>To know more please visit<a href="./sub-pages/aboutme.html"> about me </a>section</p>
+                        <p>To know more please visit <span style="background-color: lightblue;"><a
+                                    href="./sub-pages/aboutme.html" style="text-decoration: underline;">about
+                                    me</a></span> section</p>
 
 
                         <p id="github-code-link"><a href="https://github.com/hiranmay1000/personal-web"
@@ -251,19 +254,20 @@
     <!------------------------ FULL-WEBPAGE-END --------------------------->
 
 
-
-
-
     <!-- =================================================================================================================================================== -->
-
-
-
 
 
     <!-- ..................................JAVASCRIPT.................................. -->
     <script src="main.js"></script>
-
+    <script src="utilities.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+    <script type="text/javascript">
+        $(document).on("click", "nav ul li", function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+    </script>
 
     <script>
         var typed2 = new Typed("#hello", {

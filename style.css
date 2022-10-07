@@ -19,6 +19,11 @@ html {
     background-position: center;
 }
 
+#nav-menu li.active {
+    background-color: #d3d3d3;
+    line-height: 10px;
+}
+
 #top-of-page {
     background-color: #e9ebed;
     height: 80px;
@@ -27,18 +32,17 @@ html {
 
 #preloader {
     background: rgb(10, 10, 10);
-    /* background: #000000; */
     height: 100vh;
     width: 100%;
     margin-top: -80px;
     padding-bottom: 80px;
     position: fixed;
     z-index: 100;
-    /* background-image: url(/Images/Logoes/hiran-logo.gif) ; */
     background-image: url(/Images/Logoes/micro-motion.gif);
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: center;
+    transition: 1s;
 }
 
 .progression-cont {
@@ -145,6 +149,15 @@ html {
 }
 
 /* website transition end*/
+
+a.icon {
+    background: black;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 70px;
+    width: 60px;
+}
 
 /* HEADER */
 .contacts-banner {

@@ -4,10 +4,11 @@ window.onscroll = function () { scrollFunction() };
 
 // ........................PRE-LOADER........................=*/
 var loader = document.getElementById("preloader");
+window.addEventListener("load", removePreLoader());
 
-window.addEventListener("load", function () {
+function removePreLoader() {
     loader.style.display = "none";
-})
+}
 // ........................PRE-LOADER-END......................*/
 
 // ........................==HAMBURGER-ICON.....................
@@ -19,7 +20,7 @@ hamburger.addEventListener("click", () => {
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-})); a
+}));
 // .....................HAMBURGER-ICON-END.....................
 
 //.....................NAV-BAR-HIDE-ONSCROLL..................
@@ -58,7 +59,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 // ============================NAV-BAR-ONSCROLL=================================
 function scrollFunction() {
-    
+
     // // .................ONSCROLL-PROGRESS-BAR...................
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -66,12 +67,13 @@ function scrollFunction() {
     document.getElementById("mybar").style.width = scrolled + "%";
     document.getElementById("prog-container").style.zIndex = "50";
     // ..................ONSCROLL-PROGRESS-BAR-END..................
+
     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
         document.getElementById("prog-container").style.display = "block";
-        
+
         document.getElementById("second-navbar").style.display = "flex";
     }
-    
+
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("navbar").style.position = "fixed";
         document.getElementById("navbar").style.zIndex = "4";
@@ -79,19 +81,19 @@ function scrollFunction() {
         document.getElementById("navbar").style.height = "45px";
         document.getElementById("navbar").style.boxShadow = " 0px 0px 40px #2b2b2b";
         // box-shadow: 0px 0px 8px #111;
-        
-        
+
+
         document.getElementById("login-container").style.height = "45px";
-        
+
         document.getElementById("login-btn").style.width = "75px";
         document.getElementById("login-btn").style.height = "25px";
         document.getElementById("login-btn").style.fontSize = "8px";
-        
+
         document.getElementById("logo").style.fontSize = "22px";
         document.getElementById("logo").style.lineHeight = "45px";
-        
+
         document.getElementById("back-to-top-switch").style.display = "block";
-        
+
         ["link1", "link2", "link3", "link4", "link5"].forEach(function (id) {
             document.getElementById(id).style.lineHeight = "45px";
             document.getElementById(id).style.fontSize = "12px";
@@ -101,10 +103,10 @@ function scrollFunction() {
             document.getElementById(id).style.width = "22px";
             document.getElementById(id).style.margin = "2px";
         });
-        
+
         document.getElementById("aboutme-display-page").style.top = "80px";
-        
-        
+
+
     } else {
         document.getElementById("back-to-top-switch").style.display = "none";
 
@@ -146,8 +148,4 @@ function scrollFunction() {
 
     }
 }
-// ============================NAV-BAR-ONSCROLL-END=============================*/
-
-
-
-
+// ============================NAV-BAR-ONSCROLL-END=============================*/  
