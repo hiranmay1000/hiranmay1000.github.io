@@ -12,11 +12,33 @@
 body,
 html {
     scroll-behavior: smooth;
-    background-image: linear-gradient(to bottom left, #e9ebed, #f5f5f5);
+    /* background-image: linear-gradient(to bottom left, #e9ebed, #f5f5f5); */
     background-image: url(./Images/car-maclaren.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+.icon {
+    position: absolute;
+    font-size: 32px;
+    color: #757474;
+    background: none;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+a.icon {
+    height: 78px;
+    width: 60px;
+}
+
+.nav-menu {
+    position: fixed;
 }
 
 #nav-menu li.active {
@@ -26,7 +48,7 @@ html {
 
 #top-of-page {
     background-color: #e9ebed;
-    height: 80px;
+    height: -80px;
     width: 100%;
 }
 
@@ -150,15 +172,6 @@ html {
 
 /* website transition end*/
 
-a.icon {
-    background: black;
-    position: relative;
-    left: 0;
-    top: 0;
-    height: 70px;
-    width: 60px;
-}
-
 /* HEADER */
 .contacts-banner {
     display: none;
@@ -181,11 +194,12 @@ header {
 header #logo {
     text-transform: uppercase;
     font-family: "nunito sans", sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 100px;
     text-align: left;
     line-height: 80px;
     transition: 0.3s ease-in;
+    margin-left: 64px;
 }
 
 header #logo a {
@@ -205,7 +219,7 @@ header #logo a {
     float: right;
     font-family: "Poppins", sans-serif;
     height: 40px;
-    width: 80px;
+    width: 90px;
     border: none;
     color: #BED4D0;
     background-image: linear-gradient(to bottom right, #828282, #03071e);
@@ -243,14 +257,6 @@ header nav ul li a {
     color: #3b3b3b;
 }
 
-#hamburger {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: auto 0;
-}
-
-
 #nav-menu a:hover {
     color: #919191;
 }
@@ -281,89 +287,10 @@ header nav ul li a {
     margin-bottom: -25px;
 }
 
-@media only screen and (max-width: 680px) {
-    header {
-        top: 0% !important;
-    }
-
-    header nav ul {
-        background-image: linear-gradient(to bottom left, #e9ebed, #f5f5f5);
-    }
-
-    .contacts-banner {
-        display: none;
-    }
-
-    header nav ul {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: center;
-        width: 100%;
-        height: 100vh;
-        padding: 40px 0 40px 0;
-        transition: 0.3s ease-in;
-        left: -1000%;
-        margin-top: 80px;
-    }
-
-    header nav ul li a {
-        display: block;
-        line-height: 80px;
-    }
-
-    .nav-link {
-        font-size: 16px !important;
-        line-height: 80px !important;
-    }
-
-    #nav-menu a {
-        display: block !important;
-        transition: 0.3s ease-in;
-    }
-
-    #nav-menu a:hover {
-        color: #d8c3a5;
-    }
-
-    .hamburger {
-        display: block;
-        padding: 20px;
-        cursor: pointer;
-        overflow: hidden;
-        scroll-behavior: none;
-    }
-
-    .bars {
-        flex-direction: column;
-        background-color: #b8b8b8;
-        height: 3px;
-        width: 25px;
-        margin: 3px;
-        transition: 0.3s;
-    }
-
-    .hamburger.active .bars:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-    }
-
-    .hamburger.active .bars:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bars:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-    }
-
-    #nav-menu.active {
-        left: 0%;
-        transition: 0.3s ease-in;
-    }
+header nav ul {
+    line-height: 3;
+    transition: 0.3s ease-in;
 }
-
-/* menus-end */
-
 
 /* MAIN */
 
@@ -855,12 +782,107 @@ footer #copyright {
     height: 100vh;
 }
 
+/* ==================   =ACHIEVEMENT-WEBPAGE-END=================== */
 
 
-/* ===================ACHIEVEMENT-WEBPAGE-END=================== */
+
+/* MOBILE VERSION */
+
+@media only screen and (max-width: 680px) {
+
+    #nav-menu {
+        position: fixed;
+        background-color: #b6b6b6;
+        z-index: 2000;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: center;
+        width: 50%;
+        height: 100vh;
+        padding: 40px 0 40px 0;
+        left: 0%;
+        margin-top: 80px;
+
+    }
+
+    #nav-menu li {
+        padding: 5px 30px;
+    }
+
+    header {
+        height: 400px;
+    }
+
+    /* header {
+        top: 0% !important;
+    }
+
+
+    .contacts-banner {
+        display: none;
+    }
+
+    header nav ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: center;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 0 40px 0;
+        transition: 0.3s ease-in;
+        left: -1000%;
+        margin-top: 80px;
+    }  */
+
+    /* header nav ul li a {
+        display: block;
+        line-height: 80px;
+    }/* 
+
+    .nav-link {
+        font-size: 16px !important;
+        line-height: 80px !important;
+    }
+
+    #nav-menu a {
+        display: block !important;
+        transition: 0.3s ease-in;
+    }
+
+    #nav-menu a:hover {
+        color: #d8c3a5;
+    }
+
+
+    #nav-menu.active {
+        left: 0%;
+        transition: 0.3s ease-in;
+    } */
+}
+
+/* menus-end */
+
+
+
+
+
 
 /* TABLET VERSION */
 @media only screen and (min-width: 680px) {
+
+
+    .navbar-second {
+        display: block;
+    }
+
+
+    #top-of-page {
+        height: 80px;
+    }
 
     header {
         top: 0px;
@@ -988,10 +1010,6 @@ footer #copyright {
         padding: 0 14px;
         line-height: 80px;
         transition: 0.1s ease-in;
-    }
-
-    #hamburger {
-        display: none;
     }
 
     #preloader {

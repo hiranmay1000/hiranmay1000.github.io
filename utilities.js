@@ -1,34 +1,34 @@
-const getSubsButton = document.querySelector('#login-btn');
-getSubsButton.addEventListener('click', updateSubsButton());
+const btn = document.getElementById("login-btn");
+btn.addEventListener('click', updateSubs);
 
-function updateSubsButton() {
-    getSubsButton.textContent = "SUBSCRIBED";
+function updateSubs() {
+  if (btn.textContent.includes('SUBSCRIBE')) {
+    btn.textContent = "SUBSCRIBED";
+  }else if (btn.textContent.includes('SUBSCRIBED')){
+    btn.textContent = "SUBSCRIBE";
+  }
 }
 
-/*
-<script src="main.js"></script>
-    <script src="utilities.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+// ........................==HAMBURGER-ICON.....................
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("#nav-menu");
 
-    <script type="text/javascript">
-        $(document).on("click", "nav ul li", function () {
-            $(this).addClass('active').siblings().removeClass('active');
-        })
-    </script>
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
 
-    <script>
-        var typed2 = new Typed("#hello", {
-            strings: ["HELLO WORLD!"],
-            typeSpeed: 200,
-            loop: true,
-            backSpeed: 110,
-        });
-        var typed2 = new Typed(".input", {
-            strings: ["ENGINEER", "DEVELOPER", "DESIGNER"],
-            typeSpeed: 150,
-            backSpeed: 110,
-            loop: true,
-        });
-    </script>*/ 
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}));
+// .....................HAMBURGER-ICON-END.....................
 
+function myFunction() {
+  var x = document.getElementById("nav-menu");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}

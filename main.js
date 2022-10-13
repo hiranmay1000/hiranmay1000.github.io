@@ -1,5 +1,3 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector("#nav-menu");
 window.onscroll = function () { scrollFunction() };
 
 // ........................PRE-LOADER........................=*/
@@ -11,17 +9,6 @@ function removePreLoader() {
 }
 // ........................PRE-LOADER-END......................*/
 
-// ........................==HAMBURGER-ICON.....................
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-});
-
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}));
-// .....................HAMBURGER-ICON-END.....................
 
 //.....................NAV-BAR-HIDE-ONSCROLL..................
 
@@ -80,8 +67,6 @@ function scrollFunction() {
         document.getElementById("navbar").style.top = "0%";
         document.getElementById("navbar").style.height = "45px";
         document.getElementById("navbar").style.boxShadow = " 0px 0px 40px #2b2b2b";
-        // box-shadow: 0px 0px 8px #111;
-
 
         document.getElementById("login-container").style.height = "45px";
 
@@ -123,8 +108,6 @@ function scrollFunction() {
         document.getElementById("login-btn").style.width = "100px";
         document.getElementById("login-btn").style.height = "38px";
         document.getElementById("login-btn").style.fontSize = "12px";
-
-        document.getElementById("hamburger").style.padding = "12px";
 
         document.getElementById("logo").style.fontSize = "32px";
         document.getElementById("logo").style.lineHeight = "80px";
