@@ -57,14 +57,11 @@ function scrollFunction() {
     
     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
         document.getElementById("prog-container").style.display = "block";
-        
+
         document.getElementById("second-navbar").style.display = "flex";
     }
     
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("bar_container").style.fontSize = "17px";
-        document.getElementById("bar_container").style.marginTop = "-14px";
-
         document.getElementById("navbar").style.position = "fixed";
         document.getElementById("navbar").style.zIndex = "4";
         document.getElementById("navbar").style.top = "0%";

@@ -26,6 +26,7 @@ body {
     align-items: center;
     background-color: rgba(233, 235, 237);
     box-shadow: 5px 5px 24px#2c2c2c;
+    line-height: 50px;
 }
 
 .info-container {
@@ -55,6 +56,7 @@ h6 {
 }
 
 .info-section h6 {
+    margin-top: 50px;
     font-size: 18px;
     color: #a4a3a3;
 
