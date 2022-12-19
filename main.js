@@ -54,14 +54,17 @@ function scrollFunction() {
     document.getElementById("mybar").style.width = scrolled + "%";
     document.getElementById("prog-container").style.zIndex = "50";
     // ..................ONSCROLL-PROGRESS-BAR-END..................
-
+    
     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
         document.getElementById("prog-container").style.display = "block";
-
+        
         document.getElementById("second-navbar").style.display = "flex";
     }
-
+    
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("bar_container").style.fontSize = "17px";
+        document.getElementById("bar_container").style.marginTop = "-14px";
+
         document.getElementById("navbar").style.position = "fixed";
         document.getElementById("navbar").style.zIndex = "4";
         document.getElementById("navbar").style.top = "0%";
@@ -91,10 +94,13 @@ function scrollFunction() {
 
         document.getElementById("aboutme-display-page").style.top = "80px";
 
-
+        
+        
     } else {
-        document.getElementById("back-to-top-switch").style.display = "none";
+        document.getElementById("bar_container").style.fontSize = "22px";
+        document.getElementById("bar_container").style.marginTop = "0px";
 
+        document.getElementById("back-to-top-switch").style.display = "none";
 
         document.getElementById("prog-container").style.display = "none";
 
@@ -129,6 +135,40 @@ function scrollFunction() {
         document.getElementById("mybar").style.width = scrolled + "%";
         document.getElementById("prog-container").style.zIndex = "50";
 
+
     }
 }
 // ============================NAV-BAR-ONSCROLL-END=============================*/  
+
+jQuery(function ($) {
+
+    $(".sidebar-dropdown > a").click(function () {
+        $(".sidebar-submenu").slideUp(200);
+        if (
+            $(this)
+                .parent()
+                .hasClass("active")
+        ) {
+            $(".sidebar-dropdown").removeClass("active");
+            $(this)
+                .parent()
+                .removeClass("active");
+        } else {
+            $(".sidebar-dropdown").removeClass("active");
+            $(this)
+                .next(".sidebar-submenu")
+                .slideDown(200);
+            $(this)
+                .parent()
+                .addClass("active");
+        }
+    });
+
+    $("#close-sidebar").click(function () {
+        $(".page-wrapper").removeClass("toggled");
+    });
+    $("#show-sidebar").click(function () {
+        $(".page-wrapper").addClass("toggled");
+    });
+
+});
