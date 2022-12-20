@@ -116,12 +116,12 @@ body {
 /*----------------sidebar-wrapper----------------*/
 
 .sidebar-wrapper {
-    width: 280px;
+    width: 300px;
     height: 100%;
     max-height: 100%;
     position: fixed;
     top: 0;
-    left: -300px;
+    left: -310px;
     z-index: 999;
 }
 
@@ -232,7 +232,7 @@ body {
 
 .sidebar-wrapper .sidebar-menu ul li a {
     display: inline-block;
-    width: 100%;
+    width: 80%;
     text-decoration: none;
     position: relative;
     padding: 8px 30px 8px 20px;
@@ -749,10 +749,6 @@ header nav ul li a {
     color: #3b3b3b;
 }
 
-#nav-menu{
-    display: none;
-}
-
 #nav-menu a:hover {
     color: #a7a7a7;
 }
@@ -1050,7 +1046,7 @@ footer #copyright {
 }
 
 .social-media ul li a {
-    line-height: 30px;
+    line-height: 3.5rem;
 }
 
 .social-media img {
@@ -1318,7 +1314,7 @@ footer #copyright {
 
 /* MOBILE VERSION */
 
-@media only screen and (max-width: 816px) {
+@media only screen and (max-width: 800px) {
     /* header nav ul {
         transition: 0.3s ease-in;
         position: absolute;
@@ -1339,25 +1335,14 @@ footer #copyright {
         margin-top: 40px;
         text-align: center;
     }
-
-    .page1 .sidebar_menu {
-        margin-left: -1400px;
-    }
-
-    #check:checked ~ sidebar_menu {
-        margin-left: 1400px;
+    header #nav-menu {
+        display: none;
     }
 }
 /* menus-end */
 
 /* TABLET VERSION */
 @media only screen and (min-width: 680px) {
-    #check {
-        display: none;
-    }
-    .navbar-second {
-        display: block;
-    }
 
     #top-of-page {
         height: 80px;
@@ -1367,25 +1352,20 @@ footer #copyright {
         top: 0px;
     }
 
-    header #logo {
-        /* float: left; */
-    }
-
     main .index-banner {
         background-image: url(Images/amoled-colorful-sky-4433aeo37f19eqnt.jpg);
     }
 
-    nav ul {
+    /* nav ul {
         float: right;
         transition: 0.3s;
     }
 
     nav ul li {
         float: left;
-    }
+    } */
 
-    nav ul li a {
-        display: block;
+    .navbar ul li a {
         line-height: 80px;
         padding: 0 10px;
     }
@@ -1477,10 +1457,8 @@ footer #copyright {
 
     header #logo {
         /* padding: 0 60px; */
-    }
-
-    header .logo-container {
-        /* width: auto; */
+        width: 200px;
+        text-align: center;
     }
 
     header nav ul {
@@ -1489,9 +1467,9 @@ footer #copyright {
         justify-content: center;
     }
 
-    header nav ul li {
+    /* header nav ul li {
         float: left;
-    }
+    } */
 
     header nav ul li a {
         display: block;
