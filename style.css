@@ -419,7 +419,7 @@ body {
 .chiller-theme .sidebar-wrapper {
     /* background: #03071e; */
     color: #fff;
-    background-image: linear-gradient(to bottom right, #0a3b5a, #021f33);
+    background-image: linear-gradient(to bottom right, #0a4b74, #06283f);
     box-shadow: 2px 2px 13px #111;
 }
 
@@ -666,9 +666,6 @@ html {
 /* website transition end*/
 
 /* HEADER */
-.contacts-banner {
-    display: none;
-}
 
 header {
     position: fixed;
@@ -1059,6 +1056,34 @@ footer #copyright {
     font-size: small;
 }
 
+.contacts-banner {
+    height: 25px;
+    width: 100%;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #19567e;
+    color: #d3d3d3;
+}
+
+/* contacts banner */
+.contacts-details {
+    font-size: 12px;
+    list-style: none;
+    float: right;
+    line-height: 28px;
+    padding: 0 10px;
+}
+
+.contacts-details a {
+    color: #d3d3d3;
+}
+
+.contacts-details a:hover {
+    color: #ffd8a2;
+    transition: 0.3s ease-in;
+    text-decoration: underline;
+}
+
 /* footer-end */
 #check {
     display: none;
@@ -1434,32 +1459,6 @@ footer #copyright {
 /* -----------------------DESKTOP VERSION------------------------ */
 @media only screen and (min-width: 1024px) {
     /* HEADER DESKTOP */
-    .contacts-banner {
-        height: 25px;
-        width: 100%;
-        display: block;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: #19567e;
-        color: #d3d3d3;
-    }
-
-    .contacts-details {
-        font-size: 12px;
-        list-style: none;
-        float: right;
-        line-height: 28px;
-        padding: 0 10px;
-    }
-
-    .contacts-details a {
-        color: #d3d3d3;
-    }
-
-    .contacts-details a:hover {
-        color: #ffd8a2;
-        transition: 0.3s ease-in;
-        text-decoration: underline;
-    }
 
     header #logo {
         /* padding: 0 60px; */
