@@ -790,7 +790,7 @@ header nav ul {
 main .index-banner {
     width: 100%;
     height: calc(100vh);
-    background-image: url(./Images/dark_laptop_compressed.jpg);
+    background-image: url(/Images/dark_laptop_compressed.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -938,7 +938,7 @@ main .index-banner {
 .index-banner-2 {
     height: 100vh;
     width: 100%;
-    background-image: url(./Images/dark_night.jpg);
+    background-image: url(/Images/dark_night.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1050,7 +1050,7 @@ footer #copyright {
     width: 38px;
 }
 
-.version{
+.version {
     line-height: 28px;
     padding: 0 15px;
     font-size: small;
@@ -1330,7 +1330,7 @@ footer #copyright {
 /* =====================ACHIEVEMENT-WEBPAGE=================== */
 
 .achive-page-bg {
-    background-image: url(./Images/achieve-wallpaper1.jpg);
+    background-image: url(/Images/achieve-wallpaper1.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -1374,7 +1374,6 @@ footer #copyright {
 
 /* TABLET VERSION */
 @media only screen and (min-width: 680px) {
-
     #top-of-page {
         height: 80px;
     }
@@ -1384,7 +1383,7 @@ footer #copyright {
     }
 
     main .index-banner {
-        background-image: url(./Images/amoled-colorful-sky-4433aeo37f19eqnt.jpg);
+        background-image: url(/Images/amoled-colorful-sky-4433aeo37f19eqnt.jpg);
     }
 
     /* nav ul {
@@ -1401,7 +1400,7 @@ footer #copyright {
         padding: 0 10px;
     }
 
-    #nav-menu{
+    #nav-menu {
         display: flex;
     }
 
@@ -1636,7 +1635,7 @@ footer #copyright {
 
     main .index-banner {
         height: 550px;
-        background-image: url(./Images/dark_laptop_compressed.jpg);
+        background-image: url(/Images/dark_laptop_compressed.jpg);
     }
 
     .index-banner h2 {
@@ -1700,7 +1699,7 @@ footer #copyright {
     main .index-banner-2 {
         width: 100%;
         height: 100vh;
-        background-image: url(./Images/world_view_compressed.jpg);
+        background-image: url(/Images/world_view_compressed.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         display: table;
