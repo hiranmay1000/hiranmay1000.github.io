@@ -507,7 +507,7 @@ body {
 body,
 html {
     scroll-behavior: smooth;
-    background-image: url(./Images/snowy-broken-car.jpg);
+    background-image: url(/Images/snowy-broken-car.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
