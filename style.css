@@ -515,8 +515,7 @@ body {
 body,
 html {
     scroll-behavior: smooth;
-    background-image: url(Images/snow-man.jpeg);
-    /* background-image: url(Images/snowy-broken-car.jpg); */
+    background-image: url(./Images/snowy-broken-car.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -860,7 +859,7 @@ header nav ul {
 main .index-banner {
     width: 100%;
     height: calc(100vh);
-    background-image: url(./Images/dark_laptop_compressed.jpg);
+    background-image: url(/Images/dark_laptop_compressed.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1008,7 +1007,7 @@ main .index-banner {
 .index-banner-2 {
     height: 100vh;
     width: 100%;
-    background-image: url(./Images/dark_night.jpg);
+    background-image: url(/Images/dark_night.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1400,7 +1399,7 @@ footer #copyright {
 /* =====================ACHIEVEMENT-WEBPAGE=================== */
 
 .achive-page-bg {
-    background-image: url(./Images/achieve-wallpaper1.jpg);
+    background-image: url(/Images/achieve-wallpaper1.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -1551,7 +1550,7 @@ footer #copyright {
     }
 
     main .index-banner {
-        background-image: url(./Images/amoled-colorful-sky-4433aeo37f19eqnt.jpg);
+        background-image: url(/Images/amoled-colorful-sky-4433aeo37f19eqnt.jpg);
     }
 
     .navbar ul li a {
@@ -1902,7 +1901,7 @@ footer #copyright {
     main .index-banner-2 {
         width: 100%;
         height: 100vh;
-        background-image: url(./Images/world_view_compressed.jpg);
+        background-image: url(/Images/world_view_compressed.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         display: table;

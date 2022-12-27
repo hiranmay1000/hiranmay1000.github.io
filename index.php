@@ -17,7 +17,6 @@
 
     <body id="section1">
 
-        <?php require('partials/_signup.php') ?>
         <?php require('partials/_sidebar.php') ?>
         <?php require('partials/_utility.php') ?>
 
