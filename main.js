@@ -54,13 +54,13 @@ function scrollFunction() {
     document.getElementById("mybar").style.width = scrolled + "%";
     document.getElementById("prog-container").style.zIndex = "50";
     // ..................ONSCROLL-PROGRESS-BAR-END..................
-    
+
     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
         document.getElementById("prog-container").style.display = "block";
-        
+
         document.getElementById("second-navbar").style.display = "flex";
     }
-    
+
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("bar_container").style.fontSize = "18px";
         document.getElementById("bar_container").style.marginTop = "-18px";
@@ -94,8 +94,8 @@ function scrollFunction() {
 
         document.getElementById("aboutme-display-page").style.top = "80px";
 
-        
-        
+
+
     } else {
         document.getElementById("bar_container").style.fontSize = "22px";
         document.getElementById("bar_container").style.marginTop = "0px";
@@ -172,3 +172,16 @@ jQuery(function ($) {
     });
 
 });
+
+
+// subscribe-btn-----------------------------------------------
+const btn = document.getElementById("login-btn");
+btn.addEventListener('click', updateSubs);
+
+function updateSubs() {
+    if (btn.textContent.includes('SUBSCRIBE')) {
+        btn.textContent = "SUBSCRIBED";
+    } else if (btn.textContent.includes('SUBSCRIBED')) {
+        btn.textContent = "SUBSCRIBE";
+    }
+}

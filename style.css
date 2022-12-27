@@ -116,7 +116,7 @@ body {
 /*----------------sidebar-wrapper----------------*/
 
 .sidebar-wrapper {
-    width: 300px;
+    width: 280px;
     height: 100%;
     max-height: 100%;
     position: fixed;
@@ -501,13 +501,22 @@ body {
 .chiller-theme .sidebar-footer > a:last-child {
     border-right: none;
 }
-
 /* bootstrap */
+
+.r_box {
+    color: lightsteelblue;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
 
 body,
 html {
     scroll-behavior: smooth;
-    background-image: url(./Images/snowy-broken-car.jpg);
+    background-image: url(Images/snow-man.jpeg);
+    /* background-image: url(Images/snowy-broken-car.jpg); */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -542,7 +551,7 @@ html {
 }
 
 #preloader {
-    background: rgb(10, 10, 10);
+    /* background: rgb(10, 10, 10); */
     height: 100vh;
     width: 100%;
     margin-top: -80px;
@@ -576,7 +585,6 @@ html {
 
 .paragraph-message {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(205, 202, 202, 0.67);
 }
 
 .para-color {
@@ -648,9 +656,7 @@ html {
 
 /*All page linear background*/
 .page3,
-.page4,
-.page5,
-.page6 {
+.page4 {
     background-image: linear-gradient(to top right, #f0f8ff, #f5f5f5);
 }
 
@@ -704,17 +710,17 @@ header #logo a {
     justify-content: center;
 }
 
-#login-btn {
+#login-btn a {
     font-size: 12px;
     float: right;
     font-family: "Poppins", sans-serif;
     height: 40px;
     width: 90px;
     border: none;
-    color: #bed4d0;
     background-image: linear-gradient(to bottom right, #828282, #03071e);
     box-shadow: 2px 2px 3px #111;
     transition: 0.3s ease-in;
+    color: #bed4d0;
 }
 
 #login-btn:hover {
@@ -722,7 +728,73 @@ header #logo a {
     color: #e1ee12;
     transition: 0.2s;
 }
+/* 
+.popup-bg{
+    backdrop-filter: blur(12px);
+    position: absolute;
+    z-index: 999;
+    display: block;
+}
 
+.close-btn-popup{
+    width: 20px;
+    height: 19px;
+    right: 8%;
+    position: absolute;
+    top: 6%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    background: #8f8f8f;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.popup-bg .popup{
+    z-index: 999;
+    width: 90%;
+    height: 45%;
+    background: rgb(233, 235, 237, 0.5);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 10px;
+}
+
+.sign-up-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-btn button{
+    background-color:#05376d;
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+}
+
+.popup-bg .popup h2{
+    color: pink;
+    text-align: center;
+    padding: 20px 0 0 0;
+}   
+
+.popup-bg .popup .popup-content input{
+    width: 280px;
+    height: 30px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    position: relative;
+    margin: 20px auto;
+    display: block;
+} */
+
+/* menus */
 header #navbar {
     display: block;
     align-items: center;
@@ -733,7 +805,6 @@ header #navbar {
     transition: 0.3s ease-in;
 }
 
-/* menus */
 header nav ul li {
     display: inline-block;
     list-style: none;
@@ -743,17 +814,16 @@ header nav ul li a {
     font-family: "lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #3b3b3b;
+    color: slategray;
 }
 
 #nav-menu a:hover {
-    color: #a7a7a7;
+    color: #000000;
 }
 
 .back-to-top-btn {
     height: 70px;
     width: 70px;
-    /* background-color: rgba(205, 202, 202, 0.67); */
     position: fixed;
     bottom: 0%;
     right: 0%;
@@ -829,7 +899,7 @@ main .index-banner {
 .title-3 {
     /*Hello world*/
     font-family: sans-serif;
-    color: #07031e;
+    color: lightblue;
     letter-spacing: 7px;
     padding-bottom: 40px;
     width: 280px;
@@ -1024,9 +1094,9 @@ footer #copyright {
 .footer-start-banner {
     width: 100%;
     height: 45px;
-    background-color: #cecce6;
     text-align: center;
     line-height: 45px;
+    background-color: rgba(205, 202, 202, 0.8);
 }
 
 .footer-end-banner {
@@ -1050,7 +1120,7 @@ footer #copyright {
     width: 38px;
 }
 
-.version{
+.version {
     line-height: 28px;
     padding: 0 15px;
     font-size: small;
@@ -1340,23 +1410,121 @@ footer #copyright {
     width: 100%;
     height: 100vh;
 }
-
 /* ==================   =ACHIEVEMENT-WEBPAGE-END=================== */
+
+/* newsletter page */
+/* -------------------------PAGE4----------------------------*/
+.page4-newsl {
+    background-color: #021628;
+}
+
+.message-page h4 {
+    font-size: 26px;
+    text-align: center;
+    color: #f4f8f8;
+    padding: 40px 58px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.message-page .message-container #name-box,
+.message-page .message-container #mess-box {
+    margin: 10px auto;
+    width: 250px;
+    height: 45px;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #dfeaff;
+    font-size: 16px;
+}
+
+.message-page .message-container .submit-btn {
+    font-size: 16px;
+}
+
+.message-page .message-container .submit-btn-mess, .reset-btn{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.message-page .message-container #name-box{
+    height: 20px;
+}
+.message-page .message-container #mess-box{
+    height: 60px;
+}
+
+.collab-btns{
+    margin: 20px auto;
+}
+
+/* -----------------------PAGE4-END---------------------------*/
+
+/* -------------------------PAGE5----------------------------*/
+.page5 .page-height {
+    height: 350px;
+}
+
+.subscribe {
+    border: 1px solid rgba(0, 35, 53, 0.905);
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+    background-color: #00000027;
+}
+
+.subscribe-details-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscribe-details-container input {
+    outline: none;
+    margin: 15px 0;
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 100px;
+    border: none;
+    background-color: #dfeaff;
+}
+
+.subscribe-heading {
+    font-size: 30px;
+    width: 80%;
+    text-align: center;
+    font-weight: 100;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.submit-btn {
+    color: #fff;
+    background-color: #002349 !important;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    color: #91b6de;
+}
+
+/* -----------------------PAGE5-END------------------------- */
+/* newsletter page end */
 
 /* MOBILE VERSION */
 
 @media only screen and (max-width: 800px) {
-    /* header nav ul {
-        transition: 0.3s ease-in;
-        position: absolute;
-        display: flex;
-        padding: 10px;
-        flex-direction: column;
-        width: 70%;
-        margin-top: 40px;
-        text-align: center;
-    } */
-
     .sidebar_menu {
         position: fixed;
         display: flex;
@@ -1374,7 +1542,6 @@ footer #copyright {
 
 /* TABLET VERSION */
 @media only screen and (min-width: 680px) {
-
     #top-of-page {
         height: 80px;
     }
@@ -1387,21 +1554,12 @@ footer #copyright {
         background-image: url(./Images/amoled-colorful-sky-4433aeo37f19eqnt.jpg);
     }
 
-    /* nav ul {
-        float: right;
-        transition: 0.3s;
-    }
-
-    nav ul li {
-        float: left;
-    } */
-
     .navbar ul li a {
         line-height: 80px;
         padding: 0 10px;
     }
 
-    #nav-menu{
+    #nav-menu {
         display: flex;
     }
 
@@ -1452,6 +1610,55 @@ footer #copyright {
         padding: 0;
         width: 200px;
     }
+
+    
+    /* -------------------------PAGE4-NEWSL----------------------------*/
+    .page4-newsl {
+        margin: 40px 0 40px 40px;
+        width: 45%;
+        float: left;
+    }
+
+    .message-page h4 {
+        font-weight: 500;
+    }
+
+    /* -----------------------PAGE4-NEWSL-END---------------------------*/
+
+    /* -------------------------PAGE5----------------------------*/
+    .page5 {
+        width: 45%;
+        float: right;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .section-container {
+       height: 565px;
+   }
+
+     .subscribe {
+        margin: 100px 50px 0 0;
+    }
+
+    /* -----------------------PAGE5-END------------------------- */
+    /* extras */
+/* 
+    .subscribe-page,
+    .page4-newsl .page-height {
+        width: 100%;
+    }
+
+    .subscribe-page {
+        margin: 100px 50px 0 0;
+    }
+
+    .section-container {
+        margin: 0 auto;
+        width: 1000px;
+    }   */
+    /* extras-end  */
 }
 
 /* ----------------------------END---------------------------- */
@@ -1459,9 +1666,7 @@ footer #copyright {
 /* -----------------------DESKTOP VERSION------------------------ */
 @media only screen and (min-width: 1024px) {
     /* HEADER DESKTOP */
-
     header #logo {
-        /* padding: 0 60px; */
         width: 200px;
         text-align: center;
     }
@@ -1471,10 +1676,6 @@ footer #copyright {
         align-items: center;
         justify-content: center;
     }
-
-    /* header nav ul li {
-        float: left;
-    } */
 
     header nav ul li a {
         display: block;
@@ -1488,6 +1689,7 @@ footer #copyright {
     }
 
     /* MAIN */
+
     .title h2 {
         font-family: sans-serif;
         width: 800px;
@@ -1888,6 +2090,54 @@ footer #copyright {
         background-size: cover;
         background-attachment: fixed;
     }
+
+    /* -------------------------PAGE4-NEWSL----------------------------*/
+    .page5 .page-height {
+        height: 330px;
+    }
+
+    .page5 {
+        width: 30%;
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscribe {
+        position: relative;
+        right: 55%;
+    }
+
+    .page4-newsl {
+        width: 30%;
+        background-color: #021628;
+        position: relative;
+        left: 15%;
+
+    }
+
+    .message-page h4 {
+        font-size: 26px;
+        text-align: center;
+        color: #f4f8f8;
+    }
+
+    .message-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* -----------------------PAGE4-NEWSL-END---------------------------*/
+
+    /* -------------------------PAGE5----------------------------*/
+
+    .subscribe-heading {
+        font-size: 30px;
+        width: 80%;
+    }
+
+    /* -----------------------PAGE5-END------------------------- */
 
     /* FOOTER */
 
