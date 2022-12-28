@@ -604,7 +604,7 @@
                     </ul>
 
                     <ul>
-                        <li class="version">Version 5.2.4</li>
+                        <li class="version">Version 5.3.0</li>
                     </ul>
                 </div>
                 <div class="footer-end-banner">
