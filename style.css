@@ -1907,7 +1907,7 @@ footer #copyright {
         display: table;
     }
 
-    .my-info-blury-container {
+    .my-info-blury-container  {
         text-align: center;
         border: 2px solid #a8dadc;
         height: 210px;
