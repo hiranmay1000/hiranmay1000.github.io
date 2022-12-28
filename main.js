@@ -1,7 +1,7 @@
 window.onscroll = function () { scrollFunction() };
 
 // ........................PRE-LOADER........................=*/
-var loader = document.getElementById("preloader");
+var loader = document.getElementById("preloader-bg");
 window.addEventListener("load", removePreLoader());
 
 function removePreLoader() {

@@ -1,5 +1,7 @@
 <!-- -----------------PRELOADER----------------- -->
+<div id="preloader-bg">
 <div id="preloader"></div>
+</div>
 
 <!-- ---------------------------------- -->
 <div class="progression-cont" id="prog-container">

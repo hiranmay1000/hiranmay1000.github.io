@@ -82,7 +82,7 @@
         </ul>
 
         <ul>
-            <li class="version">Version 5.1.2</li>
+            <li class="version">Version 5.2.0 - php</li>
         </ul>
     </div>
     <div class="footer-end-banner">

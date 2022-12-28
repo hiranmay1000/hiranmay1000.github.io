@@ -550,18 +550,29 @@ html {
 }
 
 #preloader {
-    /* background: rgb(10, 10, 10); */
-    height: 100vh;
-    width: 100%;
+    background: rgb(10, 10, 10);
+    height: 0px;
+    width: 77px;
     margin-top: -80px;
     padding-bottom: 80px;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     background-image: url(./Images/Logoes/micro-motion.gif);
-    background-size: 30%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    transition: 1s;
+    top: 50%;
+    right: 50%;
+    border-radius: 8px;
+    transform: translate(50%, -50%);
+}
+
+#preloader-bg   {
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(12px);
+    position: fixed;
+    z-index: 99999;
 }
 
 .progression-cont {
@@ -1684,7 +1695,8 @@ footer #copyright {
     }
 
     #preloader {
-        background-size: 10%;
+        height: 60px;
+    width: 150px;
     }
 
     /* MAIN */
@@ -1718,12 +1730,13 @@ footer #copyright {
     }
 
     .search-box {
-        height: 50px;
-        width: 400px;
+        height: 100px;
+        width: 550px;
         margin: auto;
         margin-top: 190px;
         display: flex;
-        box-shadow: 5px 5px 13px #111;
+        background-color: #061f2e;
+        border-radius: 6px;
     }
 
     .container-btn button {

@@ -52,7 +52,8 @@
                                     </div>
                                 </div>
                                 <div class="search-box">
-                                    <input
+                                    <a href=""><i class="fa-duotone fa-books"></i>  </a>
+                                                                  <!-- <input
                                         type="search"
                                         name="Search"
                                         class="search-input"
@@ -66,7 +67,7 @@
                                         >
                                             SEARCH
                                         </button>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="title-2">
