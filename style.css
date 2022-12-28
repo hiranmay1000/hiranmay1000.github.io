@@ -557,7 +557,7 @@ html {
     padding-bottom: 80px;
     position: fixed;
     z-index: 100;
-    background-image: url(/Images/Logoes/micro-motion.gif);
+    background-image: url(./Images/Logoes/micro-motion.gif);
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: center;
@@ -661,7 +661,6 @@ html {
 
 .page1 {
     background: rgba(0, 0, 0, 0.7);
-    box-shadow: 6px 6px 24px #111;
 }
 
 .page3 {
@@ -839,7 +838,7 @@ header nav ul li a {
 }
 
 .b-t-t-btn-container {
-    background-image: url(/Images/Logoes/arrow1.png);
+    background-image: url(./Images/Logoes/arrow1.png);
     background-position: center;
     background-size: cover;
     height: 12px;
@@ -859,7 +858,7 @@ header nav ul {
 main .index-banner {
     width: 100%;
     height: calc(100vh);
-    background-image: url(/Images/dark_laptop_compressed.jpg);
+    background-image: url(./Images/dark_laptop_compressed.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -920,9 +919,11 @@ main .index-banner {
     display: block;
     text-align: center;
     line-height: 120px;
-    background-image: linear-gradient(to bottom right, #444444, #181818);
+    /* background-image: linear-gradient(to bottom right, #444444, #181818); */
     color: #fff;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #021628;
+    border-radius: 6px;
 }
 
 .all-elements a:hover {
@@ -1007,7 +1008,7 @@ main .index-banner {
 .index-banner-2 {
     height: 100vh;
     width: 100%;
-    background-image: url(/Images/dark_night.jpg);
+    background-image: url(./Images/dark_night.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1298,7 +1299,7 @@ footer #copyright {
 
 /* -----------------------CONTACTS----------------------- */
 .contacts-page-html1 {
-    background-image: url(/Images/contacts.jpg);
+    background-image: url(./Images/contacts.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -1399,7 +1400,7 @@ footer #copyright {
 /* =====================ACHIEVEMENT-WEBPAGE=================== */
 
 .achive-page-bg {
-    background-image: url(/Images/achieve-wallpaper1.jpg);
+    background-image: url(./Images/achieve-wallpaper1.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -1447,20 +1448,21 @@ footer #copyright {
     font-size: 16px;
 }
 
-.message-page .message-container .submit-btn-mess, .reset-btn{
+.message-page .message-container .submit-btn-mess,
+.reset-btn {
     width: 150px;
     height: 40px;
     cursor: pointer;
 }
 
-.message-page .message-container #name-box{
+.message-page .message-container #name-box {
     height: 20px;
 }
-.message-page .message-container #mess-box{
+.message-page .message-container #mess-box {
     height: 60px;
 }
 
-.collab-btns{
+.collab-btns {
     margin: 20px auto;
 }
 
@@ -1550,7 +1552,7 @@ footer #copyright {
     }
 
     main .index-banner {
-        background-image: url(/Images/amoled-colorful-sky-4433aeo37f19eqnt.jpg);
+        background-image: url(./Images/amoled-colorful-sky-4433aeo37f19eqnt.jpg);
     }
 
     .navbar ul li a {
@@ -1578,7 +1580,6 @@ footer #copyright {
     }
 
     .element-container {
-        backdrop-filter: blur(12px);
         border-radius: 5px;
         background: rgb(233, 235, 237, 0.5);
     }
@@ -1610,7 +1611,6 @@ footer #copyright {
         width: 200px;
     }
 
-    
     /* -------------------------PAGE4-NEWSL----------------------------*/
     .page4-newsl {
         margin: 40px 0 40px 40px;
@@ -1634,16 +1634,16 @@ footer #copyright {
     }
 
     .section-container {
-       height: 565px;
-   }
+        height: 565px;
+    }
 
-     .subscribe {
+    .subscribe {
         margin: 100px 50px 0 0;
     }
 
     /* -----------------------PAGE5-END------------------------- */
     /* extras */
-/* 
+    /* 
     .subscribe-page,
     .page4-newsl .page-height {
         width: 100%;
@@ -1866,7 +1866,6 @@ footer #copyright {
     .element-container {
         padding: 10px;
         backdrop-filter: blur(12px);
-        box-shadow: 0px 0px 24px #111;
     }
 
     .all-elements .element-sq {
@@ -1901,13 +1900,13 @@ footer #copyright {
     main .index-banner-2 {
         width: 100%;
         height: 100vh;
-        background-image: url(/Images/world_view_compressed.jpg);
+        background-image: url(./Images/world_view_compressed.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         display: table;
     }
 
-    .my-info-blury-container  {
+    .my-info-blury-container {
         text-align: center;
         border: 2px solid #a8dadc;
         height: 210px;
@@ -2113,7 +2112,6 @@ footer #copyright {
         background-color: #021628;
         position: relative;
         left: 15%;
-
     }
 
     .message-page h4 {
