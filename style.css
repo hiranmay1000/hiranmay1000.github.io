@@ -1035,15 +1035,14 @@ footer #copyright {
     background-color: #003e65;
 }
 
-
 /* coming soon */
 .cs {
-    background-color: rgb(4,2,4);
+    background-color: rgb(4, 2, 4);
     width: 100%;
     height: 100vh;
 }
 
-.cs img{
+.cs img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1401,15 +1400,6 @@ footer #copyright {
         background-image: url(/Images/amoled-colorful-sky-4433aeo37f19eqnt.jpg);
     }
 
-    /* nav ul {
-        float: right;
-        transition: 0.3s;
-    }
-
-    nav ul li {
-        float: left;
-    } */
-
     .navbar ul li a {
         line-height: 80px;
         padding: 0 10px;
@@ -1426,6 +1416,15 @@ footer #copyright {
 
     .previews p {
         width: 500px;
+    }
+
+    #curr-time {
+        position: absolute;
+        color: rgb(150, 186, 209);
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
     }
 
     /* all elements */
@@ -1531,35 +1530,18 @@ footer #copyright {
     }
 
     .search-box {
-        height: 50px;
-        width: 400px;
-        margin: auto;
-        margin-top: 190px;
+        top: 250%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
         display: flex;
         box-shadow: 5px 5px 13px #111;
-    }
-
-    .container-btn button {
-        font-family: "Poppins", sans-serif;
-        border: none;
-        width: 140px;
-        height: 50px;
-        color: #fff;
-        font-size: 16px;
-        background-color: #414141;
-    }
-
-    .container-btn button:hover {
-        transition: 0.2s;
-        cursor: pointer;
-        color: #ffd8a2;
+        flex-direction: row;
     }
 
     .search-input {
         transition: ease-in 0.2s;
         padding: 16px;
-        width: 280px;
-        height: 50px;
         font-family: "Poppins", sans-serif;
         font-size: 16px;
         background-color: #f3f3f3;
@@ -1569,6 +1551,23 @@ footer #copyright {
 
     .search-input:focus {
         outline: none;
+        background-color: #000000;
+        color: #fff;
+    }
+
+    .container-btn {
+        border: none;
+        height: 50px;
+        color: #fff;
+        padding: 0 15px;
+        float: right;
+        cursor: pointer;
+        background-color: #414141;
+    }
+
+    .container-btn:hover {
+        transition: 0.2s;
+        color: #ffd8a2;
     }
 
     #login-container {

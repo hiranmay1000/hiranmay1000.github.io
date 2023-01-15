@@ -23,7 +23,6 @@
     </head>
 
     <body id="section1">
-
         <div class="page-wrapper chiller-theme">
             <input type="checkbox" id="check" />
             <nav id="sidebar" class="sidebar-wrapper">
@@ -358,25 +357,27 @@
                                     </div>
                                 </div>
                                 <div class="search-box">
-                                    <input
-                                        type="search"
-                                        name="Search"
-                                        class="search-input"
-                                        placeholder="Search here"
-                                    />
-                                    <div class="container-btn">
-                                        <button
-                                            id="search-btn"
-                                            type="submit"
-                                            name="Search"
-                                        >
-                                            SEARCH
-                                        </button>
-                                    </div>
+                                    <form
+                                        action="https://www.google.com/search"
+                                        method="get"
+                                    >
+                                        <input
+                                            type="text"
+                                            name="q"
+                                            class="search-input"
+                                            placeholder="Type here"
+                                        />
+                                        <!-- <div class="container-btn"> -->
+                                            <input class="container-btn"
+                                                type="submit"
+                                                value="Google search"
+                                            />
+                                        <!-- </div> -->
+                                    </form>
                                 </div>
                             </div>
                             <div class="title-2">
-                                <p> 
+                                <p>
                                     Below <br />
                                     are the some projects which I have made
                                     througout my<br />
@@ -385,6 +386,7 @@
                             </div>
                         </div>
                     </section>
+                    <p id="curr-time">10:10:10</p>
                 </div>
                 <!------------------------- PAGE-1-END------------------------->
 
@@ -394,7 +396,9 @@
                         <div class="all-elements-box">
                             <div class="element-container">
                                 <div class="element-sq">
-                                    <a href="./Chrome_extention/chrome_extention.html">
+                                    <a
+                                        href="./Chrome_extention/chrome_extention.html"
+                                    >
                                         <h3 class="element-title">
                                             CHROME EXT
                                         </h3>
@@ -604,7 +608,7 @@
                     </ul>
 
                     <ul>
-                        <li class="version">Version 5.3.0</li>
+                        <li class="version">Version 5.3.5</li>
                     </ul>
                 </div>
                 <div class="footer-end-banner">
