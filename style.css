@@ -553,7 +553,7 @@ html {
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: center;
-    transition: 1s;
+    transition: 1ms;
 }
 
 .progression-cont {
@@ -628,6 +628,7 @@ html {
     /* scroll-snap-align: start;
     overflow-y: scroll;
     scroll-snap-type: y mandatory; */
+    background: black;
 }
 
 .page2 {
@@ -688,7 +689,8 @@ header #logo {
     font-weight: 100px;
     text-align: left;
     line-height: 80px;
-    transition: 0.3s ease-in;
+    /* transition: 0.3s ease-in; */
+    animation: 500ms;
     padding-left: 64px;
 }
 
@@ -908,7 +910,38 @@ main .index-banner {
 }
 
 .search-box {
-    display: none;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    width: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    transition: ease-in 0.2s;
+    padding: 10px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    border: none;
+    color: #a7a7a7;
+    width: 50%;
+}
+
+.search-input:focus {
+    outline: none;
+    background-color: #0e0c0c;
+    color: rgb(248, 248, 248);
+}
+
+.container-btn {
+    border: none;
+    color: #fff;
+    padding: 11px;
+    cursor: pointer;
+    background-color: #126ace;
 }
 
 /* CREATION SECTION END */
@@ -1418,6 +1451,10 @@ footer #copyright {
         width: 500px;
     }
 
+    .container-btn {
+        width: 120px;
+    }
+
     #curr-time {
         position: absolute;
         color: rgb(150, 186, 209);
@@ -1532,11 +1569,10 @@ footer #copyright {
     .search-box {
         top: 250%;
         left: 50%;
+        width: fit-content;
         transform: translate(-50%, -50%);
         position: absolute;
-        display: flex;
-        box-shadow: 5px 5px 13px #111;
-        flex-direction: row;
+        box-shadow: 5px 5px 13px rgb(43, 43, 43);
     }
 
     .search-input {
@@ -1544,15 +1580,8 @@ footer #copyright {
         padding: 16px;
         font-family: "Poppins", sans-serif;
         font-size: 16px;
-        background-color: #f3f3f3;
         border: none;
-        color: #000000;
-    }
-
-    .search-input:focus {
-        outline: none;
-        background-color: #000000;
-        color: #fff;
+        background-color: #353535;
     }
 
     .container-btn {
@@ -1560,9 +1589,8 @@ footer #copyright {
         height: 50px;
         color: #fff;
         padding: 0 15px;
-        float: right;
         cursor: pointer;
-        background-color: #414141;
+        width: 160px;
     }
 
     .container-btn:hover {

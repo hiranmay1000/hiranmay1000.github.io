@@ -180,4 +180,4 @@ let displayTime = document.getElementById("curr-time");
 setInterval(() => {
     let liveTime = new Date();
     displayTime.innerHTML = liveTime.toLocaleString();
-}, 999);
+})

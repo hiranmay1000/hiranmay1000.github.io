@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@0.12.0/build/qrcode.min.js"></script>
+</head>
+<body>
+    <div id="qrcode">Click Me</div>
+
+    <script>
+        // Create a new QR code object with the text to encode
+        var qrcode = new QRCode("qrcode", {
+            text: "https://www.example.com",
+            width: 128,
+            height: 128,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+</html>
