@@ -2,4 +2,4 @@
 
 Visit -> https://hiranmay1000.github.io
 
-# version -> 4.0
+# version -> 6.0
