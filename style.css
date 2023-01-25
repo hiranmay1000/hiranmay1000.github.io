@@ -657,11 +657,6 @@ html {
 
 .page1 {
     background: rgba(0, 0, 0, 0.7);
-    box-shadow: 6px 6px 24px #111;
-}
-
-.page3 {
-    box-shadow: -6px -6px 34px #111;
 }
 
 /* website transition end*/
@@ -859,8 +854,8 @@ main .index-banner {
 }
 
 .all-elements a:hover {
-    color: orange;
-    transition: 0.3s ease-in;
+    color: #9fd8eb;
+    transition: 0.1s ease-in;
     box-shadow: 0px 0px 14px rgba(31, 103, 212, 0.295);
 }
 
@@ -1560,7 +1555,8 @@ footer #copyright {
 
     .border-title {
         width: 800px;
-        height: 140px;
+        height: 160px;
+        line-height: 160px;
         margin: 0 auto;
         border: 3px solid #a8dadc;
         backdrop-filter: blur(5px);
