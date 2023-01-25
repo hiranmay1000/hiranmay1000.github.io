@@ -927,7 +927,7 @@ main .index-banner {
     background-color: #1a1a1a;
     border: none;
     color: #a7a7a7;
-    width: 50%;
+    width: 150px;
 }
 
 .search-input:focus {
@@ -1567,35 +1567,33 @@ footer #copyright {
     }
 
     .search-box {
-        top: 250%;
         left: 50%;
-        width: fit-content;
         transform: translate(-50%, -50%);
         position: absolute;
-        box-shadow: 5px 5px 13px rgb(43, 43, 43);
     }
-
+    
     .search-input {
         transition: ease-in 0.2s;
         padding: 16px;
         font-family: "Poppins", sans-serif;
         font-size: 16px;
         border: none;
-        background-color: #353535;
+        background-color: #292929;
+        width: 250px;
+        box-shadow: 5px 5px 13px rgb(17, 17, 17);   
     }
-
+    
     .container-btn {
+        box-shadow: 5px 5px 13px rgb(26, 26, 26);
         border: none;
-        height: 50px;
         color: #fff;
-        padding: 0 15px;
         cursor: pointer;
-        width: 160px;
+        height: 50px;        
     }
 
     .container-btn:hover {
         transition: 0.2s;
-        color: #ffd8a2;
+        color: #ffc574;
     }
 
     #login-container {
@@ -1753,7 +1751,7 @@ footer #copyright {
         height: 210px;
         max-width: 1200px;
         margin: 0 auto;
-        backdrop-filter: blur(5px);
+        background-color: #070707e8;
     }
 
     .vertical-center {

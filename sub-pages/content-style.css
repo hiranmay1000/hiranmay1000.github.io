@@ -13,10 +13,14 @@ body {
 }
 
 body {
-    background-image: url(../Images/macLaren.png);
+    background-image: url(../Images/stay-connected-blue.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+.page4{
+    margin-top: 100px;
 }
 
 .info-section {
@@ -89,7 +93,7 @@ h6 {
 }
 
 .content-container {
-    background-color: rgb(254, 245, 233, 0.95);
+    background-color: rgba(254, 245, 233, 0.973);
     width: 93%;
     border-radius: 4px;
     margin: auto;
