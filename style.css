@@ -843,6 +843,7 @@ main .index-banner {
     width: 280px;
     text-align: center;
     margin: 0 auto;
+    margin-top: -100px;
 }
 
 /* 2nd-page-only-mobile-version */
@@ -933,7 +934,7 @@ main .index-banner {
     background-color: #1a1a1a;
     border: none;
     color: #a7a7a7;
-    width: 140px;
+    width: 146px;
 }
 
 .search-input:focus {
@@ -955,7 +956,8 @@ main .index-banner {
     position: absolute;
     top: 50%;
     transform: translateY(-40%);
-    margin-left: -100px;
+    margin-left: -95px;
+    opacity: 0.7;
 }
 
 /* CREATION SECTION END */
